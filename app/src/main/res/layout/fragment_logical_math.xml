@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ui.logical_math"
+    android:theme="@style/Theme.QuímicaDigital40.Math">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.logical_math">
+
+        <Button
+            android:id="@+id/btn_regra_tres"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Regra de Três"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_equacao_segundo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_equacao_segundo"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Equação 2º Grau"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_regra_tres"
+            app:layout_constraintTop_toTopOf="@+id/btn_regra_tres" />
+
+        <Button
+            android:id="@+id/funcao"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Função 1º Grau"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/funcao_segundo"
+            app:layout_constraintStart_toStartOf="@+id/btn_regra_tres"
+            app:layout_constraintTop_toBottomOf="@+id/btn_regra_tres" />
+
+        <Button
+            android:id="@+id/funcao_segundo"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Função 2º Grau"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_equacao_segundo"
+            app:layout_constraintStart_toEndOf="@+id/funcao"
+            app:layout_constraintTop_toTopOf="@+id/funcao" />
+
+        <Button
+            android:id="@+id/btn_vertice_funcao_segundo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Vértices Função 2º Grau"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/funcao_segundo"
+            app:layout_constraintStart_toEndOf="@+id/grafico_funcao_segundo"
+            app:layout_constraintTop_toBottomOf="@+id/funcao" />
+
+        <Button
+            android:id="@+id/grafico_funcao_segundo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Gráfico Função 2º Grau"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_vertice_funcao_segundo"
+            app:layout_constraintStart_toStartOf="@+id/funcao"
+            app:layout_constraintTop_toTopOf="@+id/btn_vertice_funcao_segundo" />
+
+        <Button
+            android:id="@+id/teorema"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Teorema de\npitágoras"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_expoente"
+            app:layout_constraintStart_toStartOf="@+id/grafico_funcao_segundo"
+            app:layout_constraintTop_toBottomOf="@+id/grafico_funcao_segundo" />
+
+        <Button
+            android:id="@+id/btn_expoente"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Exponenciação"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/teorema"
+            app:layout_constraintEnd_toEndOf="@+id/btn_vertice_funcao_segundo"
+            app:layout_constraintStart_toEndOf="@+id/teorema"
+            app:layout_constraintTop_toTopOf="@+id/teorema" />
+
+        <Button
+            android:id="@+id/progressao_aritmetica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Progressão Aritmética"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/progressao_geometrica"
+            app:layout_constraintStart_toStartOf="@+id/teorema"
+            app:layout_constraintTop_toBottomOf="@+id/teorema" />
+
+        <Button
+            android:id="@+id/progressao_geometrica"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="44dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Progressão Geométrica"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_expoente"
+            app:layout_constraintStart_toEndOf="@+id/progressao_aritmetica"
+            app:layout_constraintTop_toBottomOf="@+id/teorema" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

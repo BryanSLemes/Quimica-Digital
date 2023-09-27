@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="txt_dark">#143033</color>
+    <color name="actionbar_dark">#294045</color>
+    <color name="fundo_pesquisa_principal_dark">#161B1A</color>
+    <color name="fundo_info">#7abbc7</color>
+    <color name="fundo_elemento_light">#B2D8EB</color>
+    <color name="verde_icone">#3b656f</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="actionbar2">#2774AC</color>
+
+
+
+</resources>

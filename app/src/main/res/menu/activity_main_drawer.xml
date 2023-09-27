@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/icone_pesquisa"
+            android:title="@string/pesquisa"
+            android:background="@null"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/icone_visual"
+            android:title="@string/pesquisavisu" />
+        <item
+            android:id="@+id/nav_Ajuda"
+            android:icon="@drawable/icone_ajuda"
+            android:title="@string/ajuda"
+            android:background="@null"/>
+        <item
+            android:id="@+id/nav_informacao"
+            android:icon="@drawable/icone_informacao"
+            android:title="@string/informativo"
+            android:background="@null"/>
+        <item
+            android:id="@+id/logical_math"
+            android:icon="@drawable/icone_calculadora"
+            android:title="@string/Math"
+            android:background="@null"/>
+        <item
+            android:id="@+id/physycs_facilitating"
+            android:icon="@drawable/icone_atomo"
+            android:title="@string/physics"
+            android:background="@null"/>
+    </group>
+</menu>

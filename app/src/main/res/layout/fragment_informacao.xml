@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fillViewport="true"
+android:theme="@style/Theme.QuímicaDigital40.Informacao"
+android:scrollbarStyle="outsideOverlay"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+tools:context=".ui.Informacao">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.Informacao"
+        android:id="@+id/view_info">
+
+        <LinearLayout
+            android:id="@+id/layout_info_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:gravity="center"
+                android:textSize="28sp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo"
+                android:text="Resumo:"/>
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.texto"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_medium"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:text="Resumindo o aplicativo é uma tabela periódica digital, onde o usuário encontra mais rapidamente as informações que ele deseja, tendo em vista que o mesmo deve saber pelo menos uma das três informações: Número atômico, símbolo ou nome do elemento desejado." />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo.fora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Público-Alvo:"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info_1" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="O público-alvo do aplicativo são estudantes do ensino fundamental e/ou médio, já que as informações contidas no mesmo são de certa forma mais básicas em comparação com informações que profissionais da área da Química/Ciências necessitam."
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_1"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_1"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <LinearLayout
+            android:id="@+id/layout_info_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:gravity="center"
+                android:text="Intuito da criação:"
+                android:textSize="28sp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.texto"
+                android:background="@null"
+                android:fontFamily="@font/raleway_medium"
+                android:text="O aplicativo é totalmente gratuito, não tendo nenhum fim lucrativo. Ele foi produzido para auxiliar os estudantes de química, nas suas buscas para encontrar informações de elementos químicos mais rapidamente."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:gravity="center"
+            android:text="Informações do desenvolvimento do código:"
+            android:textSize="28sp"
+            android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo.fora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info_2" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Para curiosos da tecnologia, ele foi desenvolvido na IDE(Ambiente de desenvolvimento integrado) Android Studio, tendo como base API de nível 23 Android 6.0(Marshmallow), a linguagem de programação utilizada no projeto foi a linguagem Java 1.8."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_2"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_2"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <LinearLayout
+            android:id="@+id/layout_info_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:gravity="center"
+                android:text="Compatibilidade:"
+                android:textSize="28sp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.texto"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Infelizmente não existe uma versão para os “IOS Users”, já que a aplicação é feita somente para Android. Todo e qualquer smartphone com Android 6.0 ou superior pode utilizar o app."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:textSize="28sp"
+            android:gravity="center"
+            android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo.fora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Desenvolvimento do Design:"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info_3" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:text="O desenvolvimento do Design foi feito com auxílio da ferramenta de edição de imagens Canva, uma ferramenta gratuita para Android e IOS, pode ser obtido na Play Store ou Apple Store."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_3"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_3"
+            app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+        <LinearLayout
+            android:id="@+id/layout_info_4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:gravity="center"
+                android:text="Informação extra:"
+                android:textSize="28sp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="5dp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.texto"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_medium"
+                android:text="Sem que Percebêssemos ocorreu um certo erro nas distribuições eletrônicas, nas imagens estão contidas 8 camadas, isso pode confundir pessoas que forem consultar a distribuição. Então apenas ignore a última camada e continue seus estudos."
+                android:textAlignment="center"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Caso você encontre uma informação incorreta, bug ou quer enviar um feedback sobre o aplicativo; Envie uma mensagem para o E-mail à seguir : bryansilvalemes@gmail.com ou avalie o Química Digital na Play Store."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_4"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_4"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info_4" />
+
+        <LinearLayout
+            android:id="@+id/layout_info_5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="A equipe de desenvolvimento:"
+                android:textSize="28sp"
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:text="Bryan o Programador, além de criar o código do aplicativo, implementou todas as informações e imagens de cada um dos elementos."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_5"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info_5" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="Álvaro o Designer, fez todas as imagens utilizadas no aplicativo, como a logo, os ícones e os fundos de cada uma das telas, também foi ele quem escolheu as cores do aplicativo, as cores dos elementos e o nome da aplicação."
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_5"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="Wuadillem, a pessoa que por trás dos panos foi atrás de todas as informações de cada um dos elementos, criou  imagens da distribuição eletrônica de cada um dos elementos e adquiriu as imagens dos elementos em seus estados naturais."
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_5"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:text="Versão 1.2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

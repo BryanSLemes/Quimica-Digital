@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.QuímicaDigital40" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+
+
+
+        <item name="colorPrimary">@color/actionbar_dark</item>
+        <item name="colorPrimaryVariant">@color/actionbar_dark</item>
+        <item name="android:textColor">@color/verde_icone</item>
+
+        <item name="android:background">@color/actionbar_dark</item>
+
+
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+
+        <item name="android:navigationBarColor" >?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Elemento">
+        <item name="android:textColor">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="colorPrimary">@color/actionbar_dark</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Contas">
+        <item name="android:textColor">@color/fundo_info</item>
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="colorPrimary">@color/actionbar_dark</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.txt_diagrama">
+        <item name="android:textColor">@color/fundo_elemento_light</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.valor_diagrama">
+        <item name="android:textColor">@color/fundo_info</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Pesquisa_Principal">
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Pesquisa_visual">
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Ajuda">
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:textColor">#4e7f8b</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Ajuda.titulo">
+        <item name="android:textColor">@color/fundo_info</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao">
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:textColor">#4e7f8b</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Math">
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:textColor">#4e7f8b</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao.titulo">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao.texto">
+        <item name="android:textColor">@color/fundo_info</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao.titulo.fora">
+        <item name="android:textColor">@color/fundo_info</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Resultado">
+        <item name="android:background">@color/fundo_pesquisa_principal_dark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.main_drawer">
+        <item name="android:background">@color/actionbar_dark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.barra">
+        <item name="android:background">@null</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/actionbar_dark</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/actionbar_dark</item>
+    </style>
+
+</resources>

@@ -1,0 +1,3070 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    android:theme="@style/Theme.QuímicaDigital40.Pesquisa_visual"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ui.PesquisaVisual"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pesquisa_visual_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.PesquisaVisual">
+
+        <TableLayout
+            android:id="@+id/elem_1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_num_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="1"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 1A - Metais Alcalinos"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_1" />
+
+        <TableLayout
+            android:id="@+id/elem_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/elem_11">
+
+            <TextView
+                android:id="@+id/txt_num_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="3"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_19"
+            app:layout_constraintStart_toEndOf="@+id/elem_3"
+            app:layout_constraintTop_toBottomOf="@+id/txt_familia_1">
+
+            <TextView
+                android:id="@+id/txt_num_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="11"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_19"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_11"
+            app:layout_constraintTop_toTopOf="@+id/elem_11">
+
+            <TextView
+                android:id="@+id/txt_num_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="19"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_37"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/elem_55">
+
+            <TextView
+                android:id="@+id/txt_num_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="37"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_55"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_87"
+            app:layout_constraintStart_toEndOf="@+id/elem_37"
+            app:layout_constraintTop_toBottomOf="@+id/elem_11">
+
+            <TextView
+                android:id="@+id/txt_num_55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="55"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_87"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_55"
+            app:layout_constraintTop_toTopOf="@+id/elem_55">
+
+            <TextView
+                android:id="@+id/txt_num_87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="87"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_87"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 2A - Metais Alcalinos Terrosos"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_55" />
+
+        <TableLayout
+            android:id="@+id/elem_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/elem_12">
+
+            <TextView
+                android:id="@+id/txt_num_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="4"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_12"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_20"
+            app:layout_constraintStart_toEndOf="@+id/elem_4"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_2">
+
+            <TextView
+                android:id="@+id/txt_num_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="12"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_20"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_12"
+            app:layout_constraintTop_toTopOf="@+id/elem_12">
+
+            <TextView
+                android:id="@+id/txt_num_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="20"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_38"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/elem_56">
+
+            <TextView
+                android:id="@+id/txt_num_38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="38"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_56"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_88"
+            app:layout_constraintStart_toEndOf="@+id/elem_38"
+            app:layout_constraintTop_toBottomOf="@id/elem_12">
+
+            <TextView
+                android:id="@+id/txt_num_56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="56"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_88"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_56"
+            app:layout_constraintTop_toTopOf="@+id/elem_56">
+
+            <TextView
+                android:id="@+id/txt_num_88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="88"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 3A - Família do Boro"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_56" />
+
+        <TableLayout
+            android:id="@+id/elem_5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/elem_13">
+
+            <TextView
+                android:id="@+id/txt_num_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="5"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_13"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_31"
+            app:layout_constraintStart_toEndOf="@+id/elem_5"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_3">
+
+            <TextView
+                android:id="@+id/txt_num_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="13"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_31"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_13"
+            app:layout_constraintTop_toTopOf="@+id/elem_13">
+
+            <TextView
+                android:id="@+id/txt_num_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="31"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_49"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_81"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/elem_81">
+
+            <TextView
+                android:id="@+id/txt_num_49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="49"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_81"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_113"
+            app:layout_constraintStart_toEndOf="@+id/elem_49"
+            app:layout_constraintTop_toBottomOf="@id/elem_13">
+
+            <TextView
+                android:id="@+id/txt_num_81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="81"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_81"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_113"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_81"
+            app:layout_constraintTop_toTopOf="@+id/elem_81">
+
+            <TextView
+                android:id="@+id/txt_num_113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="113"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_113"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 4A - Família do Boro"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_81" /><TableLayout
+        android:id="@+id/elem_6"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_14">
+
+        <TextView
+            android:id="@+id/txt_num_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="6"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_14"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_32"
+            app:layout_constraintStart_toEndOf="@+id/elem_6"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_4">
+
+            <TextView
+                android:id="@+id/txt_num_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="14"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_32"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_14"
+            app:layout_constraintTop_toTopOf="@+id/elem_14">
+
+            <TextView
+                android:id="@+id/txt_num_32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="32"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_50"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_82"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_82">
+
+        <TextView
+            android:id="@+id/txt_num_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="50"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_82"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_114"
+            app:layout_constraintStart_toEndOf="@+id/elem_50"
+            app:layout_constraintTop_toBottomOf="@id/elem_14">
+
+            <TextView
+                android:id="@+id/txt_num_82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="82"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_114"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_82"
+            app:layout_constraintTop_toTopOf="@+id/elem_82">
+
+            <TextView
+                android:id="@+id/txt_num_114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="114"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_114"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 5A - Família do Nitrogênio"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_82" /><TableLayout
+        android:id="@+id/elem_7"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_15">
+
+        <TextView
+            android:id="@+id/txt_num_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="7"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_15"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_33"
+            app:layout_constraintStart_toEndOf="@+id/elem_7"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_5">
+
+            <TextView
+                android:id="@+id/txt_num_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="15"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_33"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_15"
+            app:layout_constraintTop_toTopOf="@+id/elem_15">
+
+            <TextView
+                android:id="@+id/txt_num_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="33"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_51"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_83">
+
+        <TextView
+            android:id="@+id/txt_num_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="51"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_83"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_115"
+            app:layout_constraintStart_toEndOf="@+id/elem_51"
+            app:layout_constraintTop_toBottomOf="@id/elem_15">
+
+            <TextView
+                android:id="@+id/txt_num_83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="83"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_83"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_115"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_83"
+            app:layout_constraintTop_toTopOf="@+id/elem_83">
+
+            <TextView
+                android:id="@+id/txt_num_115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="115"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_115"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 6A - calcogênios"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_83" /><TableLayout
+        android:id="@+id/elem_8"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_16">
+
+        <TextView
+            android:id="@+id/txt_num_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="8"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_16"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_34"
+            app:layout_constraintStart_toEndOf="@+id/elem_8"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_6">
+
+            <TextView
+                android:id="@+id/txt_num_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="16"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_34"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_16"
+            app:layout_constraintTop_toTopOf="@+id/elem_16">
+
+            <TextView
+                android:id="@+id/txt_num_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="34"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_52"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_84">
+
+        <TextView
+            android:id="@+id/txt_num_52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="52"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_84"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_116"
+            app:layout_constraintStart_toEndOf="@+id/elem_52"
+            app:layout_constraintTop_toBottomOf="@id/elem_16">
+
+            <TextView
+                android:id="@+id/txt_num_84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="84"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_84"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_116"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_84"
+            app:layout_constraintTop_toTopOf="@+id/elem_84">
+
+            <TextView
+                android:id="@+id/txt_num_116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="116"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_116"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 7A - Halogênios"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_84" /><TableLayout
+        android:id="@+id/elem_9"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_17">
+
+        <TextView
+            android:id="@+id/txt_num_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="9"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_17"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_35"
+            app:layout_constraintStart_toEndOf="@+id/elem_9"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_7">
+
+            <TextView
+                android:id="@+id/txt_num_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="17"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_35"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_17"
+            app:layout_constraintTop_toTopOf="@+id/elem_17">
+
+            <TextView
+                android:id="@+id/txt_num_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="35"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_53"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_85">
+
+        <TextView
+            android:id="@+id/txt_num_53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="53"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_85"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_117"
+            app:layout_constraintStart_toEndOf="@+id/elem_53"
+            app:layout_constraintTop_toBottomOf="@id/elem_17">
+
+            <TextView
+                android:id="@+id/txt_num_85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="85"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_85"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_117"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_85"
+            app:layout_constraintTop_toTopOf="@+id/elem_85">
+
+            <TextView
+                android:id="@+id/txt_num_117"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="117"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_117"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_117"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txt_familia_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Família 8A - Gases Nobres"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_85" /><TableLayout
+        android:id="@+id/elem_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_10">
+
+        <TextView
+            android:id="@+id/txt_num_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="2"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_10"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_18"
+            app:layout_constraintStart_toEndOf="@+id/elem_2"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_8">
+
+            <TextView
+                android:id="@+id/txt_num_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="10"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_18"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_10"
+            app:layout_constraintTop_toTopOf="@+id/elem_10">
+
+            <TextView
+                android:id="@+id/txt_num_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="18"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_36"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_54">
+
+        <TextView
+            android:id="@+id/txt_num_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="36"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_54"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_86"
+            app:layout_constraintStart_toEndOf="@+id/elem_36"
+            app:layout_constraintTop_toBottomOf="@id/elem_10">
+
+            <TextView
+                android:id="@+id/txt_num_54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="54"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_86"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_54"
+            app:layout_constraintTop_toTopOf="@+id/elem_54">
+
+            <TextView
+                android:id="@+id/txt_num_86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="86"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_118"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintStart_toStartOf="@+id/elem_36"
+            app:layout_constraintTop_toBottomOf="@+id/elem_36">
+
+            <TextView
+                android:id="@+id/txt_num_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="118"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_118"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <!--
+        <TextView
+            android:id="@+id/txt_familia_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Metais de Transição"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/elem_118" /><TableLayout
+        android:id="@+id/elem_21"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_22"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_22">
+
+        <TextView
+            android:id="@+id/txt_num_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="21"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_23"
+            app:layout_constraintStart_toEndOf="@+id/elem_21"
+            app:layout_constraintTop_toBottomOf="@id/txt_familia_9">
+
+            <TextView
+                android:id="@+id/txt_num_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="22"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_23"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_22"
+            app:layout_constraintTop_toTopOf="@+id/elem_22">
+
+            <TextView
+                android:id="@+id/txt_num_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="23"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_24"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_25">
+
+        <TextView
+            android:id="@+id/txt_num_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="24"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_25"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_26"
+            app:layout_constraintStart_toEndOf="@+id/elem_24"
+            app:layout_constraintTop_toBottomOf="@id/elem_22">
+
+            <TextView
+                android:id="@+id/txt_num_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="25"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_26"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_25"
+            app:layout_constraintTop_toTopOf="@+id/elem_25">
+
+            <TextView
+                android:id="@+id/txt_num_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="26"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+        android:id="@+id/elem_27"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_28">
+
+        <TextView
+            android:id="@+id/txt_num_27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="27"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_28"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_29"
+            app:layout_constraintStart_toEndOf="@+id/elem_27"
+            app:layout_constraintTop_toBottomOf="@id/elem_25">
+
+            <TextView
+                android:id="@+id/txt_num_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="28"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_29"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_28"
+            app:layout_constraintTop_toTopOf="@+id/elem_28">
+
+            <TextView
+                android:id="@+id/txt_num_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="29"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout><TableLayout
+        android:id="@+id/elem_30"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/forma_borda_elemento_light"
+        app:layout_constraintEnd_toStartOf="@+id/elem_39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/elem_39">
+
+        <TextView
+            android:id="@+id/txt_num_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="30"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txt_simb_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-9dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/txt_nom_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+    </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_39"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toStartOf="@+id/elem_40"
+            app:layout_constraintStart_toEndOf="@+id/elem_30"
+            app:layout_constraintTop_toBottomOf="@id/elem_28">
+
+            <TextView
+                android:id="@+id/txt_num_39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="39"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/elem_40"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/elem_39"
+            app:layout_constraintTop_toTopOf="@+id/elem_39">
+
+            <TextView
+                android:id="@+id/txt_num_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text="40"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txt_simb_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-9dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/txt_nom_40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </TableLayout>
+    -->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

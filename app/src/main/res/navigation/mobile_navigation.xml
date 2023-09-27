@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.quimicadigital.qumicadigital40.ui.PesquisaPrincipal"
+        android:label="Pesquisa Principal"
+        tools:layout="@layout/fragment_pesquisa_principal" >
+        <action
+            android:id="@+id/action_nav_home_to_elemento"
+            app:destination="@id/elemento" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.quimicadigital.qumicadigital40.ui.PesquisaVisual"
+        android:label="Pesquisa Visual"
+        tools:layout="@layout/fragment_pesquisa_visual" >
+
+        <action
+            android:id="@+id/action_nav_gallery_to_elemento"
+            app:destination="@id/elemento" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_Ajuda"
+        android:name="com.quimicadigital.qumicadigital40.ui.Ajuda"
+        android:label="Ajuda"
+        tools:layout="@layout/fragment_ajuda" />
+    <fragment
+        android:id="@+id/nav_informacao"
+        android:name="com.quimicadigital.qumicadigital40.ui.Informacao"
+        android:label="Informações"
+        tools:layout="@layout/fragment_informacao" />
+
+    <activity
+        android:id="@+id/elemento"
+        android:name="com.quimicadigital.qumicadigital40.Elementos.Elemento"
+        android:label="activity_elemento"
+        tools:layout="@layout/activity_elemento" />
+    <fragment
+        android:id="@+id/logical_math"
+        android:name="com.quimicadigital.qumicadigital40.ui.logical_math"
+        android:label="@string/Math"
+        tools:layout="@layout/fragment_logical_math" />
+    <fragment
+        android:id="@+id/physycs_facilitating"
+        android:name="com.quimicadigital.qumicadigital40.ui.physycs_facilitating"
+        android:label= "@string/physics"
+        tools:layout="@layout/fragment_physycs_facilitating" />
+
+</navigation>

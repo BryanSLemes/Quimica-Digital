@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".Elementos.Elemento"
+    android:theme="@style/Theme.QuímicaDigital40.Elemento">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/view_elementos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Elementos.Elemento">
+
+
+        <TextView
+            android:id="@+id/txt_protons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Prótons: "
+            android:textSize="15sp"
+            android:background="@null"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            app:layout_constraintStart_toStartOf="@+id/txt_ponto_ebulicao"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ponto_ebulicao"
+            tools:ignore="TextContrastCheck" />
+
+
+
+
+        <TextView
+            android:id="@+id/txt_neutron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Nêutrons: "
+            android:background="@null"
+            android:textSize="15sp"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            app:layout_constraintStart_toStartOf="@+id/txt_eletron"
+            app:layout_constraintTop_toBottomOf="@+id/txt_eletron"
+            tools:ignore="TextContrastCheck" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_informacoes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/forma_borda_elemento_light"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/tableLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tableLayout"
+            app:layout_constraintTop_toTopOf="@+id/tableLayout">
+
+            <TextView
+                android:id="@+id/txt_num_atomico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Número Atômico: "
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_grupo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="0dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Grupo: "
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_periodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Período: "
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/txt_massa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Massa: "
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_nox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Nox: "
+            android:textSize="15sp"
+            android:background="@null"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            app:layout_constraintStart_toStartOf="@+id/txt_neutron"
+            app:layout_constraintTop_toBottomOf="@+id/txt_neutron"
+            tools:ignore="TextContrastCheck" />
+
+
+        <TextView
+            android:id="@+id/txt_familia_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Diagrama de Pauling"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintStart_toStartOf="@+id/txt_estado"
+            app:layout_constraintTop_toBottomOf="@+id/txt_estado" />
+
+        <TextView
+            android:id="@+id/txt_diagrama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:text=""
+            android:textSize="15sp"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_familia_1"
+            app:layout_constraintTop_toBottomOf="@+id/txt_familia_1"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txt_estado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="É encontrado na natureza no estado: "
+            android:textSize="15sp"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@null"
+            app:layout_constraintStart_toStartOf="@+id/txt_nox"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nox"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txt_distribuicao_eletronica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Distribuição Eletrônica:"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="20sp"
+            android:background="@null"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            app:layout_constraintStart_toStartOf="@+id/txt_descricao_fixo"
+            app:layout_constraintTop_toBottomOf="@+id/img_elemento" />
+
+        <GridLayout
+            android:id="@+id/icn_distribuicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_distribuicao_eletronica">
+
+            <TextView
+                android:id="@+id/cmd_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_left"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textColor="@color/fundo_elemento_light"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cmd_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_center_light"
+                android:fontFamily="@font/raleway_bold"
+                android:textColor="@color/fundo_elemento_light"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cmd_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_center_dark"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textColor="@color/fundo_elemento_light"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cmd_4"
+                android:layout_width="match_parent"
+                android:textColor="@color/fundo_elemento_light"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_center_light"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cmd_5"
+                android:layout_width="match_parent"
+                android:textColor="@color/fundo_elemento_light"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_center_dark"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cmd_6"
+                android:layout_width="match_parent"
+                android:textColor="@color/fundo_elemento_light"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_center_light"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/cmd_7"
+                android:layout_width="match_parent"
+                android:textColor="@color/fundo_elemento_light"
+                android:layout_height="wrap_content"
+                android:background="@drawable/forma_borda_dist_right"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp"
+                android:text=""
+                android:textSize="30sp" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/txt_descricao_fixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="20sp"
+            android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"
+            android:text="Descrição: "
+            app:layout_constraintStart_toStartOf="@+id/txt_familia_1"
+            app:layout_constraintTop_toBottomOf="@+id/txt_diagrama"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/txt_descricao"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:text=""
+            android:textSize="15sp"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_descricao_fixo"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descricao_fixo"
+            tools:ignore="TextContrastCheck" />
+
+        <ImageView
+            android:id="@+id/img_elemento"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descricao" />
+
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/txt_simb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto_bold"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/txt_nom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:background="@null"
+                android:fontFamily="@font/roboto"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </TableLayout>
+
+
+        <TextView
+            android:id="@+id/txt_eletron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Elétrons: "
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_protons"
+            app:layout_constraintTop_toBottomOf="@+id/txt_protons" />
+
+        <TextView
+            android:id="@+id/txt_ponto_ebulicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Ponto de Ebulição: "
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_ponto_fusao"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ponto_fusao" />
+
+        <TextView
+            android:id="@+id/txt_ponto_fusao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/Theme.QuímicaDigital40.valor_diagrama"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Ponto de Fusão: "
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="@+id/tableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

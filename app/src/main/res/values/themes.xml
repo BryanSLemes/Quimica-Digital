@@ -1,0 +1,104 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.QuímicaDigital40" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/verde_icone</item>
+        <item name="colorPrimaryVariant">@color/verde_icone</item>
+        <item name="android:textColor">@color/verde_icone</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:navigationBarColor" >?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Elemento">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/actionbar_dark</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Contas">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.txt_diagrama">
+        <item name="android:textColor">@color/actionbar_dark</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.valor_diagrama">
+        <item name="android:textColor">@color/verde_icone</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Pesquisa_Principal">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.barra">
+        <item name="android:background">@null</item>
+        <item name="colorPrimary">@color/verde_icone</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Pesquisa_visual">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Ajuda">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/verde_icone</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Ajuda.titulo">
+        <item name="android:textColor">@color/actionbar_dark</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/verde_icone</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Math">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/verde_icone</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao.titulo">
+        <item name="android:textColor">@color/actionbar_dark</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Informacao.titulo.fora">
+        <item name="android:textColor">@color/verde_icone</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.Resultado">
+        <item name="android:background">@color/fundo_elemento_light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.main_drawer">
+        <item name="android:background">@color/verde_icone</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.QuímicaDigital40.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:background">@color/verde_icone</item>
+    </style>
+
+
+    <style name="Theme.QuímicaDigital40.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:background">@color/verde_icone</item>
+    </style>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".Math.Base_contas"
+    android:theme="@style/Theme.QuímicaDigital40.Contas">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/view_contas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Math.Base_contas">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:text="Resolução: "
+                android:textSize="20sp"
+                android:theme="@style/Theme.QuímicaDigital40.valor_diagrama" />
+
+            <TextView
+                android:id="@+id/txt_explic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@null"
+                android:fontFamily="@font/raleway_bold"
+                android:text="B - Base | E - Exponte"
+                android:textSize="25sp"
+                android:theme="@style/Theme.QuímicaDigital40.valor_diagrama" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:id="@+id/view_edts"
+                android:background="@drawable/forma_borda_elemento_dark">
+
+                <TextView
+                    android:id="@+id/txt_Base"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="B: "
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edt_base"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    android:theme="@style/Theme.QuímicaDigital40.Contas"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_Base"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_Base2"
+                    app:layout_constraintStart_toEndOf="@+id/txt_Base"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Base"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <TextView
+                    android:id="@+id/txt_Exponte"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="E: "
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_Base"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_Base" />
+
+                <EditText
+                    android:id="@+id/edt_expoente"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_Exponte"
+                    app:layout_constraintEnd_toStartOf="@+id/txt_Exponte2"
+                    app:layout_constraintStart_toEndOf="@+id/txt_Exponte"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Exponte"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <TextView
+                    android:id="@+id/txt_resultado"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Resultado: \n"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txt_Exponte"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_Exponte" />
+
+
+                <TextView
+                    android:id="@+id/txt_Base2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="B: "
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/edt_base"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Base" />
+
+                <EditText
+                    android:id="@+id/edt_base2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_Base2"
+                    app:layout_constraintStart_toEndOf="@+id/txt_Base2"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Base2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <TextView
+                    android:id="@+id/txt_Exponte2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="E: "
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toEndOf="@+id/edt_expoente"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Exponte" />
+
+                <EditText
+                    android:id="@+id/edt_expoente2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_Exponte2"
+                    app:layout_constraintStart_toEndOf="@+id/txt_Exponte2"
+                    app:layout_constraintTop_toTopOf="@+id/txt_Exponte2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/forma_borda_elemento_dark"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Calcular"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

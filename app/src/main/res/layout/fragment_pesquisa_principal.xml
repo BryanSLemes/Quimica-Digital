@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:context=".ui.PesquisaPrincipal"
+    android:id="@+id/layout_principal"
+    android:theme="@style/Theme.QuímicaDigital40.Pesquisa_Principal">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.PesquisaPrincipal">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/edt_pesquisa"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:fontFamily="@font/raleway_medium"
+        android:hint="Digite aqui"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_buscar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:background="@drawable/forma_borda_elemento_dark"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Consultar"
+        android:textColor="@color/white"
+        android:orientation="vertical"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edt_pesquisa"
+        app:layout_constraintTop_toTopOf="@+id/edt_pesquisa" />
+
+
+    <Button
+        android:id="@+id/btn_aleatorio"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/forma_borda_elemento_dark"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Aleatório"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_buscar"
+        app:layout_constraintStart_toStartOf="@+id/btn_buscar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_buscar" />
+
+
+    <TextView
+        android:id="@+id/txt_recente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@null"
+        android:fontFamily="@font/raleway_medium"
+        android:text="Recentes:"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/layout_recentes"
+        app:layout_constraintStart_toStartOf="@+id/layout_recentes" />
+
+    <LinearLayout
+        android:id="@+id/layout_recentes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/forma_borda_elemento_dark"
+        android:gravity="start"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_aleatorio">
+
+
+        <TextView
+            android:id="@+id/txt_rec_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Elemento 1"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_rec_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Elemento 2"
+            android:textColor="@color/white"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="8dp"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_rec_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@null"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Elemento 3"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_rec_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginStart="8dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/raleway_bold"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="8dp"
+            android:text="Elemento 4"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/txt_rec_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="@color/white"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Elemento 5"
+            android:textSize="25sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

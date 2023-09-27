@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+    <shape >
+        <solid android:color="#619199" android:duration="1000" /> <!-- Cor de fundo quando o botão é pressionado -->
+        <corners android:radius="20dp"/> <!-- Raio dos cantos -->
+    </shape>
+</item>
+<item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android">
+        <solid android:color="@color/fundo_info"/>
+        <corners android:radius="20dp"/>
+    </shape>
+</item>
+</selector>
