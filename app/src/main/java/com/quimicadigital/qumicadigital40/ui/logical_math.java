@@ -21,6 +21,7 @@ public class logical_math extends Fragment {
     private Button btn_regra_tres;
     private Button btn_equacaoSegundo;
     private Button btn_exponenciacao;
+    private Button btn_teorema;
     private Button btn_vertice_segundo;
     public static int selection;
     public static String title;
@@ -38,6 +39,7 @@ public class logical_math extends Fragment {
         btn_equacaoSegundo = (Button) view.findViewById(R.id.btn_equacao_segundo);
         btn_exponenciacao = (Button) view.findViewById(R.id.btn_expoente);
         btn_vertice_segundo = (Button) view.findViewById(R.id.btn_vertice_funcao_segundo);
+        btn_teorema = (Button) view.findViewById(R.id.btn_teorema);
 
         btn_regra_tres.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +66,15 @@ public class logical_math extends Fragment {
                 startActivity(intent);
                 selection = 6;
                 title = "Vértices Função 2º Grau";
+            }});
+
+        btn_teorema.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Base_contas.class);
+                startActivity(intent);
+                selection = 7;
+                title = "Teorema de Pitágoras";
             }});
 
         btn_exponenciacao.setOnClickListener(new View.OnClickListener() {

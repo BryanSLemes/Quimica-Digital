@@ -76,7 +76,7 @@ public class Base_contas extends AppCompatActivity {
         number = logical_math.selection;
         contas = new Contas(number,btn_calcular,title,title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4,result);
 
-        if(number == 1 || number == 2 || number == 6){
+        if(number == 1 || number == 2 || number == 6 || number == 7 ){
             edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -101,6 +101,17 @@ public class Base_contas extends AppCompatActivity {
                 }
             });
 
+            edt2.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        btn_calcular.performClick();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
         }else if(number == 8){
             edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
@@ -108,6 +119,16 @@ public class Base_contas extends AppCompatActivity {
                     if (actionId == EditorInfo.IME_ACTION_DONE) {
                         View nextView = edt2;
                         nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+            edt2.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        btn_calcular.performClick();
                         return true;
                     }
                     return false;

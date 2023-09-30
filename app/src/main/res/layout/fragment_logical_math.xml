@@ -103,7 +103,7 @@
             app:layout_constraintTop_toTopOf="@+id/btn_vertice_funcao_segundo" />
 
         <Button
-            android:id="@+id/teorema"
+            android:id="@+id/btn_teorema"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
@@ -127,10 +127,10 @@
             android:text="Exponenciação"
             android:textColor="@color/white"
             android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="@+id/teorema"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_teorema"
             app:layout_constraintEnd_toEndOf="@+id/btn_vertice_funcao_segundo"
-            app:layout_constraintStart_toEndOf="@+id/teorema"
-            app:layout_constraintTop_toTopOf="@+id/teorema" />
+            app:layout_constraintStart_toEndOf="@+id/btn_teorema"
+            app:layout_constraintTop_toTopOf="@+id/btn_teorema" />
 
         <Button
             android:id="@+id/progressao_aritmetica"
@@ -144,8 +144,8 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@+id/progressao_geometrica"
-            app:layout_constraintStart_toStartOf="@+id/teorema"
-            app:layout_constraintTop_toBottomOf="@+id/teorema" />
+            app:layout_constraintStart_toStartOf="@+id/btn_teorema"
+            app:layout_constraintTop_toBottomOf="@+id/btn_teorema" />
 
         <Button
             android:id="@+id/progressao_geometrica"
@@ -160,7 +160,7 @@
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/btn_expoente"
             app:layout_constraintStart_toEndOf="@+id/progressao_aritmetica"
-            app:layout_constraintTop_toBottomOf="@+id/teorema" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_teorema" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
