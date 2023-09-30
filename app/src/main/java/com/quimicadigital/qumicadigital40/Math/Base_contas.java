@@ -28,11 +28,13 @@ public class Base_contas extends AppCompatActivity {
     private TextView txt2;
     private TextView txt3;
     private TextView txt4;
+    private TextView txt5;
 
     private EditText edt1;
     private EditText edt2;
     private EditText edt3;
     private EditText edt4;
+    private EditText edt5;
     private TextView result;
 
     private View view_contas;
@@ -50,6 +52,7 @@ public class Base_contas extends AppCompatActivity {
         edt2 = findViewById(R.id.edt_expoente);
         edt3 = findViewById(R.id.edt_base2);
         edt4 = findViewById(R.id.edt_expoente2);
+        edt5 = findViewById(R.id.edt_expoente3);
 
         String hexColor = String.format("#%06X", (0xFFFFFF & ((ColorDrawable) findViewById(R.id.view_contas).getBackground()).getColor()));
         view_contas = findViewById(R.id.view_edts);
@@ -59,6 +62,7 @@ public class Base_contas extends AppCompatActivity {
             edt2.setTextColor(Color.parseColor("#FFFFFF"));
             edt3.setTextColor(Color.parseColor("#FFFFFF"));
             edt4.setTextColor(Color.parseColor("#FFFFFF"));
+            edt5.setTextColor(Color.parseColor("#FFFFFF"));
         }
 
         btn_calcular = findViewById(R.id.btn_calcular);
@@ -68,13 +72,14 @@ public class Base_contas extends AppCompatActivity {
         txt2 = findViewById(R.id.txt_Exponte);
         txt3 = findViewById(R.id.txt_Base2);
         txt4 = findViewById(R.id.txt_Exponte2);
+        txt5 = findViewById(R.id.txt_Exponte3);
 
 
 
         result = findViewById(R.id.txt_resultado);
 
         number = logical_math.selection;
-        contas = new Contas(number,btn_calcular,title,title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4,result);
+        contas = new Contas(number,btn_calcular,title,title2,txt1,txt2,txt3,txt4,txt5,edt1,edt2,edt3,edt4,edt5,result);
 
         if(number == 1 || number == 2 || number == 6 || number == 7 ){
             edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -134,6 +139,66 @@ public class Base_contas extends AppCompatActivity {
                     return false;
                 }
             });
+        }else if(number == 9){
+            edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt3;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt3.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt2;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt2.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt4;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt4.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt5;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt5.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        btn_calcular.performClick();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
         }
 
     }

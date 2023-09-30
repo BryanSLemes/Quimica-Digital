@@ -23,6 +23,7 @@ public class logical_math extends Fragment {
     private Button btn_exponenciacao;
     private Button btn_teorema;
     private Button btn_vertice_segundo;
+    private Button btn_progressao_aritmetica;
     public static int selection;
     public static String title;
 
@@ -40,6 +41,7 @@ public class logical_math extends Fragment {
         btn_exponenciacao = (Button) view.findViewById(R.id.btn_expoente);
         btn_vertice_segundo = (Button) view.findViewById(R.id.btn_vertice_funcao_segundo);
         btn_teorema = (Button) view.findViewById(R.id.btn_teorema);
+        btn_progressao_aritmetica = (Button) view.findViewById(R.id.btn_progressao_aritmetica);
 
         btn_regra_tres.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +86,15 @@ public class logical_math extends Fragment {
                 startActivity(intent);
                 selection = 8;
                 title = "Exponenciação";
+            }});
+
+        btn_progressao_aritmetica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Base_contas.class);
+                startActivity(intent);
+                selection = 9;
+                title = "Progressão Aritmética";
             }});
     }
 
