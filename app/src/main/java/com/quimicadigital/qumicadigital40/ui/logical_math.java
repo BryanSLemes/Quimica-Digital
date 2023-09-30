@@ -20,6 +20,8 @@ public class logical_math extends Fragment {
     private FragmentLogicalMathBinding binding;
     private Button btn_regra_tres;
     private Button btn_equacaoSegundo;
+    private Button btn_funcao;
+    private Button btn_funcaoSegundo;
     private Button btn_exponenciacao;
     private Button btn_teorema;
     private Button btn_vertice_segundo;
@@ -38,6 +40,8 @@ public class logical_math extends Fragment {
 
         btn_regra_tres = (Button) view.findViewById(R.id.btn_regra_tres);
         btn_equacaoSegundo = (Button) view.findViewById(R.id.btn_equacao_segundo);
+        btn_funcao = (Button) view.findViewById(R.id.btn_funcao);
+        btn_funcaoSegundo = (Button) view.findViewById(R.id.btn_funcao_segundo);
         btn_exponenciacao = (Button) view.findViewById(R.id.btn_expoente);
         btn_vertice_segundo = (Button) view.findViewById(R.id.btn_vertice_funcao_segundo);
         btn_teorema = (Button) view.findViewById(R.id.btn_teorema);
@@ -59,6 +63,24 @@ public class logical_math extends Fragment {
                 startActivity(intent);
                 selection = 2;
                 title = "Equação do 2º Grau";
+            }});
+
+        btn_funcao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Base_contas.class);
+                startActivity(intent);
+                selection = 3;
+                title = "Função do 1º Grau";
+            }});
+
+        btn_funcaoSegundo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Base_contas.class);
+                startActivity(intent);
+                selection = 4;
+                title = "Função do 2º Grau";
             }});
 
         btn_vertice_segundo.setOnClickListener(new View.OnClickListener() {
@@ -116,9 +138,6 @@ public class logical_math extends Fragment {
 
             }
         }
-
-
-
         View root = binding.getRoot();
         return root;
     }

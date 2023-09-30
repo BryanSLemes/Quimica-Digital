@@ -19,8 +19,10 @@ public class Contas {
                 new equacaoSegundo().calcular(btn,txt_title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4, resultado);
                 break;
             case 3:
+                new funcaoPrimeiro().calcular(btn,txt_title,txt_title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4, resultado);
                 break;
             case 4:
+                new funcaoSegundo().calcular(btn,txt_title,txt_title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4, resultado);
                 break;
             case 5:
                 break;

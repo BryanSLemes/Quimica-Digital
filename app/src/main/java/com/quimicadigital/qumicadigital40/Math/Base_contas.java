@@ -73,15 +73,12 @@ public class Base_contas extends AppCompatActivity {
         txt3 = findViewById(R.id.txt_Base2);
         txt4 = findViewById(R.id.txt_Exponte2);
         txt5 = findViewById(R.id.txt_Exponte3);
-
-
-
         result = findViewById(R.id.txt_resultado);
 
         number = logical_math.selection;
         contas = new Contas(number,btn_calcular,title,title2,txt1,txt2,txt3,txt4,txt5,edt1,edt2,edt3,edt4,edt5,result);
 
-        if(number == 1 || number == 2 || number == 6 || number == 7 ){
+        if(number == 1 || number == 2 || number == 3 || number == 6 || number == 7 ){
             edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
@@ -199,6 +196,53 @@ public class Base_contas extends AppCompatActivity {
                 }
             });
 
+        }else if(number == 4){
+            edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt3;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt3.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt2;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt2.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        View nextView = edt4;
+                        nextView.requestFocus();
+                        return true;
+                    }
+                    return false;
+                }
+            });
+
+            edt4.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId == EditorInfo.IME_ACTION_DONE) {
+                        btn_calcular.performClick();
+                        return true;
+                    }
+                    return false;
+                }
+            });
         }
 
     }

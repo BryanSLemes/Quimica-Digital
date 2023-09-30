@@ -45,7 +45,7 @@
             app:layout_constraintTop_toTopOf="@+id/btn_regra_tres" />
 
         <Button
-            android:id="@+id/funcao"
+            android:id="@+id/btn_funcao"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginTop="44dp"
@@ -55,12 +55,12 @@
             android:text="Função 1º Grau"
             android:textColor="@color/white"
             android:textSize="15sp"
-            app:layout_constraintEnd_toStartOf="@+id/funcao_segundo"
+            app:layout_constraintEnd_toStartOf="@+id/btn_funcao_segundo"
             app:layout_constraintStart_toStartOf="@+id/btn_regra_tres"
             app:layout_constraintTop_toBottomOf="@+id/btn_regra_tres" />
 
         <Button
-            android:id="@+id/funcao_segundo"
+            android:id="@+id/btn_funcao_segundo"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="5dp"
@@ -70,8 +70,8 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/btn_equacao_segundo"
-            app:layout_constraintStart_toEndOf="@+id/funcao"
-            app:layout_constraintTop_toTopOf="@+id/funcao" />
+            app:layout_constraintStart_toEndOf="@+id/btn_funcao"
+            app:layout_constraintTop_toTopOf="@+id/btn_funcao" />
 
         <Button
             android:id="@+id/btn_vertice_funcao_segundo"
@@ -84,9 +84,9 @@
             android:text="Vértices Função 2º Grau"
             android:textColor="@color/white"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@+id/funcao_segundo"
+            app:layout_constraintEnd_toEndOf="@+id/btn_funcao_segundo"
             app:layout_constraintStart_toEndOf="@+id/grafico_funcao_segundo"
-            app:layout_constraintTop_toBottomOf="@+id/funcao" />
+            app:layout_constraintTop_toBottomOf="@+id/btn_funcao" />
 
         <Button
             android:id="@+id/grafico_funcao_segundo"
@@ -99,7 +99,7 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@+id/btn_vertice_funcao_segundo"
-            app:layout_constraintStart_toStartOf="@+id/funcao"
+            app:layout_constraintStart_toStartOf="@+id/btn_funcao"
             app:layout_constraintTop_toTopOf="@+id/btn_vertice_funcao_segundo" />
 
         <Button
