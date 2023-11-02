@@ -117,7 +117,7 @@ public class progressao_aritmetica {
             case 2:
                 an = Double.parseDouble(String.valueOf(edt1.getText()));
                 a1 = Double.parseDouble(String.valueOf(edt2.getText()));
-                n = Double.parseDouble(String.valueOf(edt4.getText()));
+                n = Double.parseDouble(String.valueOf(edt4.getText())) -1;
 
                 txt_resultado+="r = ("+ df.format(an) + " ";
                 if((a1*-1.0) > 0.0){

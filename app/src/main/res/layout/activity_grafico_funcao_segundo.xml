@@ -10,7 +10,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    tools:context=".Math.Base_contas"
+    tools:context=".Math.Grafico_funcao_segundo"
     android:theme="@style/Theme.QuímicaDigital40.Contas">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".Math.Base_contas">
+        tools:context=".Math.Grafico_funcao_segundo">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -40,7 +40,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@null"
                 android:fontFamily="@font/raleway_bold"
-                android:text="Resolução: "
+                android:text="Resolução:\nf(y) = ax² + bx + c"
                 android:textSize="20sp"
                 android:theme="@style/Theme.QuímicaDigital40.valor_diagrama" />
 
@@ -51,7 +51,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@null"
                 android:fontFamily="@font/raleway_bold"
-                android:text="B - Base | E - Exponte"
+                android:text="A - coeficiente multiplicado por x² |\nB - coeficiente multiplicado por x |\nC - termo independente |\nc - número variável"
                 android:textSize="25sp"
                 android:theme="@style/Theme.QuímicaDigital40.valor_diagrama" />
 
@@ -70,7 +70,7 @@
                     android:layout_marginTop="40dp"
                     android:background="@null"
                     android:fontFamily="@font/raleway_bold"
-                    android:text="B: "
+                    android:text="A: "
                     android:textSize="25sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -99,7 +99,7 @@
                     android:layout_marginTop="30dp"
                     android:background="@null"
                     android:fontFamily="@font/raleway_bold"
-                    android:text="E: "
+                    android:text="C: "
                     android:textSize="25sp"
                     app:layout_constraintStart_toStartOf="@+id/txt_2x"
                     app:layout_constraintTop_toBottomOf="@+id/txt_2x" />
@@ -114,27 +114,9 @@
                     android:minHeight="48dp"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@+id/txt_c"
-                    app:layout_constraintEnd_toStartOf="@+id/txt_Exponte2"
-                    app:layout_constraintStart_toEndOf="@+id/txt_c"
+                    app:layout_constraintEnd_toEndOf="@+id/edt_2x"
                     app:layout_constraintTop_toTopOf="@+id/txt_c"
                     tools:ignore="SpeakableTextPresentCheck" />
-
-
-                <TextView
-                    android:id="@+id/txt_resultado"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="20dp"
-                    android:background="@null"
-                    android:fontFamily="@font/raleway_bold"
-                    android:text="Resultado: \n"
-                    android:textSize="25sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/txt_c"
-                    app:layout_constraintTop_toBottomOf="@+id/txt_Exponte2" />
 
 
                 <TextView
@@ -165,45 +147,19 @@
 
 
                 <TextView
-                    android:id="@+id/txt_Exponte2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:background="@null"
-                    android:fontFamily="@font/raleway_bold"
-                    android:text="E: "
-                    android:textSize="25sp"
-                    app:layout_constraintStart_toEndOf="@+id/edt_c"
-                    app:layout_constraintTop_toTopOf="@+id/txt_c" />
-
-                <EditText
-                    android:id="@+id/edt_expoente2"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/raleway_medium"
-                    android:imeOptions="actionDone"
-                    android:inputType="numberDecimal|numberSigned"
-                    android:minHeight="48dp"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/txt_Exponte2"
-                    app:layout_constraintStart_toEndOf="@+id/txt_Exponte2"
-                    app:layout_constraintTop_toTopOf="@+id/txt_Exponte2"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <TextView
                     android:id="@+id/txt_x1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="50dp"
                     android:background="@null"
                     android:fontFamily="@font/raleway_bold"
-                    android:text="E: "
+                    android:text="X₁:"
                     android:textSize="25sp"
                     app:layout_constraintStart_toStartOf="@+id/txt_2x"
                     app:layout_constraintTop_toBottomOf="@+id/txt_c" />
 
                 <EditText
-                    android:id="@+id/edt_expoente3"
+                    android:id="@+id/edt_x1"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_medium"
@@ -215,6 +171,167 @@
                     app:layout_constraintStart_toEndOf="@+id/txt_x1"
                     app:layout_constraintTop_toTopOf="@+id/txt_x1"
                     tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txt_x2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="X₂:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2x"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_x1" />
+
+                <EditText
+                    android:id="@+id/edt_x2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_x2"
+                    app:layout_constraintStart_toEndOf="@+id/txt_x1"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txt_x3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="X₃:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2x"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_x2" />
+
+                <EditText
+                    android:id="@+id/edt_x3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_x3"
+                    app:layout_constraintStart_toEndOf="@+id/txt_x1"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txt_x4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="X₄:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2x"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_x3" />
+
+                <EditText
+                    android:id="@+id/edt_x4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_x4"
+                    app:layout_constraintStart_toEndOf="@+id/txt_x1"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x4"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txt_x5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="X₅:"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/txt_2x"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_x4" />
+
+                <EditText
+                    android:id="@+id/edt_x5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/raleway_medium"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal|numberSigned"
+                    android:minHeight="48dp"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/txt_x5"
+                    app:layout_constraintStart_toEndOf="@+id/txt_x1"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:id="@+id/txt_y1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Y₁:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_x"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x1" />
+
+                <TextView
+                    android:id="@+id/txt_y2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Y₂:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_x"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x2" />
+
+                <TextView
+                    android:id="@+id/txt_y3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Y₃:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_x"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x3" />
+
+                <TextView
+                    android:id="@+id/txt_y4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Y₄:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_x"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x4" />
+
+                <TextView
+                    android:id="@+id/txt_y5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="@font/raleway_bold"
+                    android:text="Y₅:"
+                    android:textSize="25sp"
+                    app:layout_constraintStart_toStartOf="@+id/txt_x"
+                    app:layout_constraintTop_toTopOf="@+id/txt_x5" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

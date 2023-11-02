@@ -85,11 +85,11 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             app:layout_constraintEnd_toEndOf="@+id/btn_funcao_segundo"
-            app:layout_constraintStart_toEndOf="@+id/grafico_funcao_segundo"
+            app:layout_constraintStart_toEndOf="@+id/btn_grafico_segundo"
             app:layout_constraintTop_toBottomOf="@+id/btn_funcao" />
 
         <Button
-            android:id="@+id/grafico_funcao_segundo"
+            android:id="@+id/btn_grafico_segundo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="5dp"
@@ -114,8 +114,8 @@
             android:textColor="@color/white"
             android:textSize="15sp"
             app:layout_constraintEnd_toStartOf="@+id/btn_expoente"
-            app:layout_constraintStart_toStartOf="@+id/grafico_funcao_segundo"
-            app:layout_constraintTop_toBottomOf="@+id/grafico_funcao_segundo" />
+            app:layout_constraintStart_toStartOf="@+id/btn_grafico_segundo"
+            app:layout_constraintTop_toBottomOf="@+id/btn_grafico_segundo" />
 
         <Button
             android:id="@+id/btn_expoente"

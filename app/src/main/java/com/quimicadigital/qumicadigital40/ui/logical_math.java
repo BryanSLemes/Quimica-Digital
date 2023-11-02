@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import com.quimicadigital.qumicadigital40.Math.Base_contas;
+import com.quimicadigital.qumicadigital40.Math.Grafico_funcao_segundo;
 import com.quimicadigital.qumicadigital40.R;
 import com.quimicadigital.qumicadigital40.databinding.FragmentLogicalMathBinding;
 
@@ -26,6 +27,7 @@ public class logical_math extends Fragment {
     private Button btn_teorema;
     private Button btn_vertice_segundo;
     private Button btn_progressao_aritmetica;
+    private Button btn_grafico_segundo;
     public static int selection;
     public static String title;
 
@@ -46,6 +48,7 @@ public class logical_math extends Fragment {
         btn_vertice_segundo = (Button) view.findViewById(R.id.btn_vertice_funcao_segundo);
         btn_teorema = (Button) view.findViewById(R.id.btn_teorema);
         btn_progressao_aritmetica = (Button) view.findViewById(R.id.btn_progressao_aritmetica);
+        btn_grafico_segundo = (Button) view.findViewById(R.id.btn_grafico_segundo);
 
         btn_regra_tres.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -83,6 +86,15 @@ public class logical_math extends Fragment {
                 title = "Função do 2º Grau";
             }});
 
+        btn_grafico_segundo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Grafico_funcao_segundo.class);
+                startActivity(intent);
+                selection = 5;
+                title = "Gráfico Função 2º Grau";
+            }});
+
         btn_vertice_segundo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -118,6 +130,8 @@ public class logical_math extends Fragment {
                 selection = 9;
                 title = "Progressão Aritmética";
             }});
+
+
     }
 
     @Override

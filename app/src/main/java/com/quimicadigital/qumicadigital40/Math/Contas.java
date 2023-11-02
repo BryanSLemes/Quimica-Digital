@@ -25,6 +25,7 @@ public class Contas {
                 new funcaoSegundo().calcular(btn,txt_title,txt_title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4, resultado);
                 break;
             case 5:
+                //don't come to this class, it's treated on other class;
                 break;
             case 6:
                 new verticeSegundo().calcular(btn,txt_title,txt_title2,txt1,txt2,txt3,txt4,edt1,edt2,edt3,edt4, resultado);

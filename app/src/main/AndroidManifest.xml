@@ -17,6 +17,9 @@
             android:name=".Math.Base_contas"
             android:exported="false" />
         <activity
+            android:name=".Math.Grafico_funcao_segundo"
+            android:exported="false" />
+        <activity
             android:name=".Elementos.Elemento"
             android:exported="false" />
         <activity

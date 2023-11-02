@@ -2,7 +2,6 @@ package com.quimicadigital.qumicadigital40.Math;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -14,9 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.quimicadigital.qumicadigital40.Elementos.Elemento;
 import com.quimicadigital.qumicadigital40.R;
-import com.quimicadigital.qumicadigital40.ui.PesquisaPrincipal;
 import com.quimicadigital.qumicadigital40.ui.logical_math;
 
 public class Base_contas extends AppCompatActivity {
@@ -48,9 +45,9 @@ public class Base_contas extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle(logical_math.title);
 
-        edt1 = findViewById(R.id.edt_base);
-        edt2 = findViewById(R.id.edt_expoente);
-        edt3 = findViewById(R.id.edt_base2);
+        edt1 = findViewById(R.id.edt_2x);
+        edt2 = findViewById(R.id.edt_c);
+        edt3 = findViewById(R.id.edt_x);
         edt4 = findViewById(R.id.edt_expoente2);
         edt5 = findViewById(R.id.edt_expoente3);
 
@@ -68,11 +65,11 @@ public class Base_contas extends AppCompatActivity {
         btn_calcular = findViewById(R.id.btn_calcular);
         title = findViewById(R.id.txt_title);
         title2 = findViewById(R.id.txt_explic);
-        txt1 = findViewById(R.id.txt_Base);
-        txt2 = findViewById(R.id.txt_Exponte);
-        txt3 = findViewById(R.id.txt_Base2);
+        txt1 = findViewById(R.id.txt_2x);
+        txt2 = findViewById(R.id.txt_c);
+        txt3 = findViewById(R.id.txt_x);
         txt4 = findViewById(R.id.txt_Exponte2);
-        txt5 = findViewById(R.id.txt_Exponte3);
+        txt5 = findViewById(R.id.txt_x1);
         result = findViewById(R.id.txt_resultado);
 
         number = logical_math.selection;
