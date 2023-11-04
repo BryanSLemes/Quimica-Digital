@@ -25,9 +25,10 @@ public class logical_math extends Fragment {
     private Button btn_funcaoSegundo;
     private Button btn_exponenciacao;
     private Button btn_teorema;
+    private Button btn_grafico_segundo;
     private Button btn_vertice_segundo;
     private Button btn_progressao_aritmetica;
-    private Button btn_grafico_segundo;
+    private Button btn_progressao_geometrica;
     public static int selection;
     public static String title;
 
@@ -45,10 +46,11 @@ public class logical_math extends Fragment {
         btn_funcao = (Button) view.findViewById(R.id.btn_funcao);
         btn_funcaoSegundo = (Button) view.findViewById(R.id.btn_funcao_segundo);
         btn_exponenciacao = (Button) view.findViewById(R.id.btn_expoente);
+        btn_grafico_segundo = (Button) view.findViewById(R.id.btn_grafico_segundo);
         btn_vertice_segundo = (Button) view.findViewById(R.id.btn_vertice_funcao_segundo);
         btn_teorema = (Button) view.findViewById(R.id.btn_teorema);
         btn_progressao_aritmetica = (Button) view.findViewById(R.id.btn_progressao_aritmetica);
-        btn_grafico_segundo = (Button) view.findViewById(R.id.btn_grafico_segundo);
+        btn_progressao_geometrica = (Button) view.findViewById(R.id.btn_progressao_geometrica);
 
         btn_regra_tres.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +131,15 @@ public class logical_math extends Fragment {
                 startActivity(intent);
                 selection = 9;
                 title = "Progressão Aritmética";
+            }});
+
+        btn_progressao_geometrica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), Base_contas.class);
+                startActivity(intent);
+                selection = 10;
+                title = "Progressão Geométrica";
             }});
 
 

@@ -143,12 +143,12 @@
             android:text="Progressão Aritmética"
             android:textColor="@color/white"
             android:textSize="15sp"
-            app:layout_constraintEnd_toStartOf="@+id/progressao_geometrica"
+            app:layout_constraintEnd_toStartOf="@+id/btn_progressao_geometrica"
             app:layout_constraintStart_toStartOf="@+id/btn_teorema"
             app:layout_constraintTop_toBottomOf="@+id/btn_teorema" />
 
         <Button
-            android:id="@+id/progressao_geometrica"
+            android:id="@+id/btn_progressao_geometrica"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"

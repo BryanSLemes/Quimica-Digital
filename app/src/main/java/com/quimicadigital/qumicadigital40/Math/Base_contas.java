@@ -133,7 +133,7 @@ public class Base_contas extends AppCompatActivity {
                     return false;
                 }
             });
-        }else if(number == 9){
+        }else if(number == 9 || number == 10){
             edt1.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {

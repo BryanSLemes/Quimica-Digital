@@ -39,6 +39,9 @@ public class Contas {
             case 9:
                 new progressao_aritmetica().calcular(btn,txt_title,txt_title2,txt1,txt2,txt3,txt4,txt5,edt1,edt2,edt3,edt4,edt5, resultado);
                 break;
+            case 10:
+                new progressao_geometrica().calcular(btn,txt_title,txt_title2,txt1,txt2,txt3,txt4,txt5,edt1,edt2,edt3,edt4,edt5, resultado);
+                break;
         }
     }
 }
