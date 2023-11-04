@@ -28,10 +28,10 @@
             android:icon="@drawable/icone_calculadora"
             android:title="@string/Math"
             android:background="@null"/>
-        <item
+        <!--<item
             android:id="@+id/physycs_facilitating"
             android:icon="@drawable/icone_atomo"
             android:title="@string/physics"
-            android:background="@null"/>
+            android:background="@null"/>-->
     </group>
 </menu>
