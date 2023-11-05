@@ -7,9 +7,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/my_icon_maior"
+        android:icon="@mipmap/nova_logo"
         android:label="Química Digital"
-        android:roundIcon="@mipmap/my_icon_maior_round"
+        android:roundIcon="@mipmap/nova_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.QuímicaDigital40"
         tools:targetApi="33">

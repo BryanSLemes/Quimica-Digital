@@ -3,11 +3,9 @@ package com.quimicadigital.qumicadigital40.Elementos;
 import static com.quimicadigital.qumicadigital40.ui.PesquisaPrincipal.removerAcentos;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.widget.Toast;
-
 import com.quimicadigital.qumicadigital40.Database.conexao;
-import com.quimicadigital.qumicadigital40.ui.PesquisaPrincipal;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class Pesquisa {
@@ -17,6 +15,8 @@ public class Pesquisa {
     private String sql,aux;
     static CRUD crudto;
     public String au;
+
+
 
     public boolean pesquisaPrincipal(String elemento){
 
@@ -90,6 +90,15 @@ public class Pesquisa {
     }
 
     public void povoarCRUD(int num){
+        CRUD(num);
+    }
+
+    public void povoarCRUD(int num,SQLiteDatabase db){
+        this.db = db;
+        CRUD(num);
+    }
+
+    private void CRUD(int num){
         CRUD crud = new CRUD();
         sql = "select * from Elementos where num_atomico = " + num;
         cursor = db.rawQuery(sql,null);
@@ -164,4 +173,20 @@ public class Pesquisa {
         int num =(crudto.num_atomico) - 1;
         return pesquisaPrincipal(num + "");
     }
+
+    public List<String> nomear(SQLiteDatabase db){
+        List<String> nomes = new ArrayList();
+
+        sql = "select nome,simbolo from Elementos";
+        cursor = db.rawQuery(sql,null);
+        cursor.moveToFirst();
+
+        for (int i =1;i<=118;i++){
+            nomes.add(cursor.getString(0));
+            nomes.add(cursor.getString(1));
+            cursor.moveToNext();
+        }
+        return nomes;
+    }
+
 }

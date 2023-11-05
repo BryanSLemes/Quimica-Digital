@@ -16,13 +16,13 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
+        android:id="@+id/nav_pesquisa_visual"
         android:name="com.quimicadigital.qumicadigital40.ui.PesquisaVisual"
         android:label="Pesquisa Visual"
         tools:layout="@layout/fragment_pesquisa_visual" >
 
         <action
-            android:id="@+id/action_nav_gallery_to_elemento"
+            android:id="@+id/action_nav_pesquisa_visual_to_elemento"
             app:destination="@id/elemento" />
     </fragment>
 

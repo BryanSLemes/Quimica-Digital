@@ -56,9 +56,10 @@ tools:context=".ui.Informacao">
                 android:fontFamily="@font/raleway_medium"
                 android:textAlignment="center"
                 android:textSize="16sp"
-                android:text="Resumindo o aplicativo é uma tabela periódica digital, onde o usuário encontra mais rapidamente as informações que ele deseja, tendo em vista que o mesmo deve saber pelo menos uma das três informações: Número atômico, símbolo ou nome do elemento desejado." />
+                android:text="Resumindo o aplicativo é uma tabela periódica digital, onde o usuário encontra mais rapidamente as informações dos elementos que ele deseja, tendo em vista que o mesmo deve saber pelo menos uma das três informações: Número atômico, símbolo ou nome do elemento desejado." />
 
         </LinearLayout>
+
 
         <TextView
             android:id="@+id/textView20"
@@ -72,7 +73,7 @@ tools:context=".ui.Informacao">
             android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo.fora"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Público-Alvo:"
+            android:text="Descrição:"
             app:layout_constraintTop_toBottomOf="@+id/layout_info_1" />
 
         <TextView
@@ -84,7 +85,7 @@ tools:context=".ui.Informacao">
             android:fontFamily="@font/raleway_medium"
             android:textAlignment="center"
             android:textSize="16sp"
-            android:text="O público-alvo do aplicativo são estudantes do ensino fundamental e/ou médio, já que as informações contidas no mesmo são de certa forma mais básicas em comparação com informações que profissionais da área da Química/Ciências necessitam."
+            android:text="O projeto Química Digital nasceu da ideia de modernizar a busca de informações de elementos químicos. Através de uma ferramenta digital, offline para dispositivos Android.\n\nO projeto visa proporcionar aos estudantes uma maneira mais amigável de interagir com as informações químicas, buscando substituir a utilização de tabelas periódicas impressas, muitas vezes complexas e confusas para os iniciantes.\n\nA versão digital oferece uma organização clara e detalhada dos elementos, facilitando o aprendizado e compreensão das informações."
             app:layout_constraintEnd_toEndOf="@+id/layout_info_1"
             app:layout_constraintStart_toStartOf="@+id/layout_info_1"
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -154,7 +155,7 @@ tools:context=".ui.Informacao">
             android:layout_marginTop="5dp"
             android:background="@null"
             android:fontFamily="@font/raleway_medium"
-            android:text="Para curiosos da tecnologia, ele foi desenvolvido na IDE(Ambiente de desenvolvimento integrado) Android Studio, tendo como base API de nível 23 Android 6.0(Marshmallow), a linguagem de programação utilizada no projeto foi a linguagem Java 1.8."
+            android:text="Para curiosos da tecnologia, ele foi desenvolvido na IDE(Ambiente de desenvolvimento integrado) Android Studio, tendo como base API de nível 24 Android 7.0(Android Nougat), a linguagem de programação utilizada no projeto foi a linguagem Java 1.8."
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/layout_info_2"
@@ -196,7 +197,7 @@ tools:context=".ui.Informacao">
                 android:background="@null"
                 android:theme="@style/Theme.QuímicaDigital40.Informacao.texto"
                 android:fontFamily="@font/raleway_medium"
-                android:text="Infelizmente não existe uma versão para os “IOS Users”, já que a aplicação é feita somente para Android. Todo e qualquer smartphone com Android 6.0 ou superior pode utilizar o app."
+                android:text="Infelizmente não existe uma versão para o IOS, já que a aplicação é feita somente para Android. Todo e qualquer smartphone com Android 7.0 ou superior pode utilizar o app."
                 android:textAlignment="center"
                 android:textSize="16sp" />
 
@@ -216,7 +217,7 @@ tools:context=".ui.Informacao">
             android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo.fora"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Desenvolvimento do Design:"
+            android:text="Público-Alvo:"
             app:layout_constraintTop_toBottomOf="@+id/layout_info_3" />
 
         <TextView
@@ -226,7 +227,7 @@ tools:context=".ui.Informacao">
             android:layout_marginTop="5dp"
             android:background="@null"
             android:fontFamily="@font/raleway_medium"
-            android:text="O desenvolvimento do Design foi feito com auxílio da ferramenta de edição de imagens Canva, uma ferramenta gratuita para Android e IOS, pode ser obtido na Play Store ou Apple Store."
+            android:text="O público-alvo do aplicativo são estudantes do ensino fundamental e/ou médio, já que as informações contidas no mesmo são de certa forma mais básicas em comparação com informações que profissionais da área da Química/Ciências necessitam."
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/layout_info_3"
@@ -234,11 +235,11 @@ tools:context=".ui.Informacao">
             app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
         <LinearLayout
-            android:id="@+id/layout_info_4"
+            android:id="@+id/layout_info_7"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="40dp"
             android:background="@drawable/forma_borda_elemento_dark"
             android:orientation="vertical"
@@ -247,18 +248,18 @@ tools:context=".ui.Informacao">
             app:layout_constraintTop_toBottomOf="@+id/textView31">
 
             <TextView
-                android:id="@+id/textView36"
+                android:id="@+id/textView40"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
                 android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
-                android:text="Informação extra:"
                 android:textSize="28sp"
-                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo" />
+                android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo"
+                android:text="Desenvolvimento do Design:"/>
 
             <TextView
-                android:id="@+id/textView37"
+                android:id="@+id/textView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5dp"
@@ -268,9 +269,9 @@ tools:context=".ui.Informacao">
                 android:layout_marginBottom="8dp"
                 android:background="@null"
                 android:fontFamily="@font/raleway_medium"
-                android:text="Sem que Percebêssemos ocorreu um certo erro nas distribuições eletrônicas, nas imagens estão contidas 8 camadas, isso pode confundir pessoas que forem consultar a distribuição. Então apenas ignore a última camada e continue seus estudos."
                 android:textAlignment="center"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:text="O desenvolvimento do Design foi feito com auxílio da ferramenta de design colaborativa Figma, uma ferramenta gratuita para Android e IOS, pode ser obtida na Play Store ou Apple Store, como também pode ser utilizado através do seu site na Web." />
 
         </LinearLayout>
 
@@ -278,15 +279,15 @@ tools:context=".ui.Informacao">
             android:id="@+id/textView38"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="20dp"
             android:background="@null"
             android:fontFamily="@font/raleway_medium"
-            android:text="Caso você encontre uma informação incorreta, bug ou quer enviar um feedback sobre o aplicativo; Envie uma mensagem para o E-mail à seguir : bryansilvalemes@gmail.com ou avalie o Química Digital na Play Store."
+            android:text="Caso você encontre alguma informação incorreta, bug ou quer enviar um feedback sobre o aplicativo; Envie uma mensagem para o E-mail à seguir : bryansilvalemes@gmail.com ou avalie o Química Digital na Play Store."
             android:textAlignment="center"
             android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/layout_info_4"
-            app:layout_constraintStart_toStartOf="@+id/layout_info_4"
-            app:layout_constraintTop_toBottomOf="@+id/layout_info_4" />
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_3"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_3"
+            app:layout_constraintTop_toBottomOf="@+id/layout_info_7" />
 
         <LinearLayout
             android:id="@+id/layout_info_5"
@@ -322,7 +323,7 @@ tools:context=".ui.Informacao">
             android:layout_marginTop="10dp"
             android:background="@null"
             android:fontFamily="@font/raleway_medium"
-            android:text="Bryan o Programador, além de criar o código do aplicativo, implementou todas as informações e imagens de cada um dos elementos."
+            android:text="Bryan Lemes o Programador, desenvolveu e implementou cada uma das funcionalidades do app, como também arquitetou a estrutura de dados dos elementos."
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
@@ -338,7 +339,7 @@ tools:context=".ui.Informacao">
             android:fontFamily="@font/raleway_medium"
             android:textAlignment="center"
             android:textSize="16sp"
-            android:text="Álvaro o Designer, fez todas as imagens utilizadas no aplicativo, como a logo, os ícones e os fundos de cada uma das telas, também foi ele quem escolheu as cores do aplicativo, as cores dos elementos e o nome da aplicação."
+            android:text="Álvaro Varela e Henrique os Designers, criaram os prototipos do app com auxílio da ferramenta Figma, prototiparam cada tela em seus modos claro e escuro, definaram as fontes de estilização, cores, tamanhos, a nova logo... Portanto prototiparam tudo relacionado ao Design do app."
             app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
             app:layout_constraintStart_toStartOf="@+id/layout_info_5"
             app:layout_constraintTop_toBottomOf="@+id/textView33" />
@@ -352,10 +353,24 @@ tools:context=".ui.Informacao">
             android:fontFamily="@font/raleway_medium"
             android:textAlignment="center"
             android:textSize="16sp"
-            android:text="Wuadillem, a pessoa que por trás dos panos foi atrás de todas as informações de cada um dos elementos, criou  imagens da distribuição eletrônica de cada um dos elementos e adquiriu as imagens dos elementos em seus estados naturais."
+            android:text="Wuadillem Rodrigues, a pessoa que por de trás dos panos auxiliou a equipe na busca e cadastro das informações dos elementos químicos dentro do banco de dados, como também fez a busca pelas imagens que alguns elementos disponibilizam junto de suas informações."
             app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
             app:layout_constraintStart_toStartOf="@+id/layout_info_5"
             app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:fontFamily="@font/raleway_medium"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:text="José Adair, atuando como programador auxiliou a equipe no desenvolvimento das funcionalidades do app."
+            app:layout_constraintEnd_toEndOf="@+id/layout_info_5"
+            app:layout_constraintStart_toStartOf="@+id/layout_info_5"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
         <TextView
             android:id="@+id/textView4"
@@ -371,7 +386,7 @@ tools:context=".ui.Informacao">
             android:text="@string/versão"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

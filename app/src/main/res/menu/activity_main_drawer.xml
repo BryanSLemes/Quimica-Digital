@@ -10,7 +10,7 @@
             android:title="@string/pesquisa"
             android:background="@null"/>
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_pesquisa_visual"
             android:icon="@drawable/icone_visual"
             android:title="@string/pesquisavisu" />
         <item

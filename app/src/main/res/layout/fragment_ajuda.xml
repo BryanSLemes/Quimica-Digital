@@ -39,132 +39,24 @@ tools:context=".ui.Ajuda">
         android:layout_marginTop="10dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/raleway_medium"
+        android:text="      A tela Inicial (também chamada de Pesquisa Principal) possui as seguintes funcionalidades:\n\n         Pesquisa por texto, insira no campo de texto de pesquisa uma destas informações: Número atômico, Nome ou Símbolo de um determinado elemento. Ao clicar no botão de consultar, caso o app encontre algum elemento correspondente a informação informada, você será redirecionado para uma nova tela que irá estruturar as informações que você busca. Caractéres de espaço e acentos não interferem na pesquisa.\n\n         O campo de texto de pesquisa possui um 'corretor' que lhe oferece opções para autocompletar o texto que você está digitando.\n\n         O botão aleatório faz a busca de um elemento aleatório e exibe suas informações ao usuário.\n\n          Recentes, ao clicar sobre qualquer elemento salvo no bloco de recentes, você será redirecionado para o elemento. Esta funcionalidade funciona de maneira auto-sugestiva, ao acessar um elemento ele será armazenado no bloco de recentes, se for acessado um elemento que já esteja no bloco de recentes, nada irá ocorrer."
         android:textSize="16sp"
-        android:text="As pesquisas da tela Pesquisa Principal funcionam da seguinte maneira: Na barra onde são inseridas as informações, podem ser inseridos três tipos de dados sobre o elementos, número atômico, símbolo ou nome."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView3"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="A pesquisa principal faz uma busca muito específica, então qualquer espaço ou caractere indesejado fará com que a busca não seja efetuada."
-        app:layout_constraintEnd_toEndOf="@+id/textView19"
-        app:layout_constraintStart_toStartOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:text="Quando for buscar elementos com base em seu símbolo, dê prioridade em utilizar letras minúsculas. A primeira letra ou todas letras maiúsculas também pode ser utilizado. 	"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView20"
-        app:layout_constraintStart_toStartOf="@+id/textView20"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="A primeira letra minúscula e a segunda maiúscula acarretará em um falha de busca."
-        app:layout_constraintEnd_toEndOf="@+id/textView21"
-        app:layout_constraintStart_toStartOf="@+id/textView21"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="Para cada elemento que possuí acento, existem quatro formas de pesquisa por nome: "
-        app:layout_constraintEnd_toEndOf="@+id/textView22"
-        app:layout_constraintStart_toStartOf="@+id/textView22"
-        app:layout_constraintTop_toBottomOf="@+id/textView22" />
-
-    <TextView
-        android:id="@+id/textView24"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="A primeira é quando se pesquisa o nome do elemento, sem acento e todas as letras minúsculas. "
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
-        app:layout_constraintStart_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-    <TextView
-        android:id="@+id/textView25"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="A segunda é quando o nome do elemento não possuí acento e a primeira letra é maiúscula."
-        app:layout_constraintEnd_toEndOf="@+id/textView24"
-        app:layout_constraintStart_toStartOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="A terceira forma é quando a primeira letra é maiúscula e possuí acento."
-        app:layout_constraintEnd_toEndOf="@+id/textView25"
-        app:layout_constraintStart_toStartOf="@+id/textView25"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
-
-    <TextView
-        android:id="@+id/textView27"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="A quarta forma é quando o nome possuí acento e todas as letras são minúsculas."
-        app:layout_constraintEnd_toEndOf="@+id/textView26"
-        app:layout_constraintStart_toStartOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="Recomendação: é recomendado que não utilize letras maiúsculas e acentos durante a pesquisa principal."
-        app:layout_constraintEnd_toEndOf="@+id/textView27"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
 
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/raleway_bold"
         android:text="Pesquisa visual"
-        android:theme="@style/Theme.QuímicaDigital40.Ajuda.titulo"
         android:textSize="28sp"
+        android:theme="@style/Theme.QuímicaDigital40.Ajuda.titulo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView30"
@@ -174,72 +66,39 @@ tools:context=".ui.Ajuda">
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/raleway_medium"
         android:textSize="16sp"
-        android:text="Essa é a forma mais fácil de se encontrar os elementos, eles estão divididos por famílias, exceto o Hidrogênio."
+        android:text="      Na pesquisa visual os elementos estão separados por famílias, para identificar os elementos tenha como base Número atômico, Nome e símbolo dos elementos.\n\n       Os Elementos são botões, logo ao clicar sobre algum deles você será redirecionado ao elemento correspondente. "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView29"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
     <TextView
         android:id="@+id/textView31"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="É perceptível que os elementos possuem uma cor, essa cor é definida pela família onde o mesmo está inserido. "
-        app:layout_constraintEnd_toEndOf="@+id/textView30"
-        app:layout_constraintStart_toStartOf="@+id/textView30"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="Logical Math"
+        android:textSize="28sp"
+        android:theme="@style/Theme.QuímicaDigital40.Ajuda.titulo"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <TextView
         android:id="@+id/textView32"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="50dp"
         android:fontFamily="@font/raleway_medium"
+        android:text="      Ao acessar a aba do Logical Math, selecione o tipo de conta que deseja resolver, após isso você será redirecionado para a tela da conta correspondente.\n\n       Geralmente o app irá solicitar que você preencha quase todos os parâmetros(campos de texto) de uma conta, deixando vazio a incógnita que se deseja encontrar, de acordo com a fórmula que você escolher, tenha em mente que as contas podem possuir mais de uma fórmula.\n\n     Cada conta possui seu próprio manual em sua tela, Resolução: corresponde as fórmulas que podem ser utilizadas; Termos/Incógnitas: são exibidas abaixo da Resolução e tem este padrão, incógnita - descrição | ...\n\n        Ao clicar em calcular o app fará todas as verificações necessárias, caso algum dado informado não esteja dentro dos conformes ele irá exibir um alerta na tela informando o porquê do app não poder efetuar os calculos.\n\n        Caso não haja problemas com os argumentos(dados preenchidos) o app irá fazer os calculos e exibir de forma objetiva o processo e o resultado final da conta."
         android:textSize="16sp"
-        android:text="O canto superior direito contém o número atômico do elemento."
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView38"
-        app:layout_constraintStart_toStartOf="@+id/textView38"
-        app:layout_constraintTop_toBottomOf="@+id/textView38" />
-
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="Para selecionar um elemento é simples, apenas pressione o elemento desejado, as informações de busca estão contidas na imagem da seguinte maneira:									     "
-        app:layout_constraintEnd_toEndOf="@+id/textView31"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView31"
         app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="Na área central da imagem possuí o símbolo do elemento.	"
-        app:layout_constraintEnd_toEndOf="@+id/textView36"
-        app:layout_constraintStart_toStartOf="@+id/textView36"
-        app:layout_constraintTop_toBottomOf="@+id/textView36" />
-
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
-        android:fontFamily="@font/raleway_medium"
-        android:textSize="16sp"
-        android:text="Abaixo do símbolo possuí o nome do elemento."
-        app:layout_constraintEnd_toEndOf="@+id/textView37"
-        app:layout_constraintStart_toStartOf="@+id/textView37"
-        app:layout_constraintTop_toBottomOf="@+id/textView37" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

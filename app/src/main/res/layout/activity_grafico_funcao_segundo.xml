@@ -51,7 +51,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@null"
                 android:fontFamily="@font/raleway_bold"
-                android:text="A - coeficiente multiplicado por x² |\nB - coeficiente multiplicado por x |\nC - termo independente |\nc - número variável"
+                android:text="A - coeficiente multiplicado por x² |\nB - coeficiente multiplicado por x |\nc - número variável"
                 android:textSize="25sp"
                 android:theme="@style/Theme.QuímicaDigital40.valor_diagrama" />
 
@@ -133,14 +133,16 @@
 
                 <EditText
                     android:id="@+id/edt_x"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/raleway_medium"
                     android:imeOptions="actionDone"
                     android:inputType="numberDecimal|numberSigned"
                     android:minHeight="48dp"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@+id/txt_x"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_x"
                     app:layout_constraintTop_toTopOf="@+id/txt_x"
                     tools:ignore="SpeakableTextPresentCheck" />

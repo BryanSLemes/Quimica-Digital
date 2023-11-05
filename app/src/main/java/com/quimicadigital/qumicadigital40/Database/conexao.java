@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.Toast;
 
 public class conexao extends SQLiteOpenHelper {
 
@@ -45,7 +44,6 @@ public class conexao extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         Povoar povoar = new Povoar(cv,db);
-        Toast.makeText(context,"Banco povoado", Toast.LENGTH_LONG).show();
     }
 
     public SQLiteDatabase getDatabase(){return this.getReadableDatabase();}

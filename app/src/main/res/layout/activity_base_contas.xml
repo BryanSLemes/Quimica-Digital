@@ -151,14 +151,16 @@
 
                 <EditText
                     android:id="@+id/edt_x"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/raleway_medium"
                     android:imeOptions="actionDone"
                     android:inputType="numberDecimal|numberSigned"
                     android:minHeight="48dp"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@+id/txt_x"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_x"
                     app:layout_constraintTop_toTopOf="@+id/txt_x"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -178,14 +180,16 @@
 
                 <EditText
                     android:id="@+id/edt_expoente2"
-                    android:layout_width="100dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
                     android:fontFamily="@font/raleway_medium"
                     android:imeOptions="actionDone"
                     android:inputType="numberDecimal|numberSigned"
                     android:minHeight="48dp"
                     android:textSize="20sp"
                     app:layout_constraintBottom_toBottomOf="@+id/txt_Exponte2"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_Exponte2"
                     app:layout_constraintTop_toTopOf="@+id/txt_Exponte2"
                     tools:ignore="SpeakableTextPresentCheck" />

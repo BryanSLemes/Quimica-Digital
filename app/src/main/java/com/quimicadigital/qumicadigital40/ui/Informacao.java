@@ -29,7 +29,7 @@ public class Informacao extends Fragment {
         LinearLayout layout_info = binding.layoutInfo1;
         LinearLayout layout_info2 = binding.layoutInfo2;
         LinearLayout layout_info3 = binding.layoutInfo3;
-        LinearLayout layout_info4 = binding.layoutInfo4;
+        LinearLayout layout_info4 = binding.layoutInfo7;
         LinearLayout layout_info5 = binding.layoutInfo5;
         if (rootView != null) {
             Drawable backgroundDrawable = rootView.getBackground();

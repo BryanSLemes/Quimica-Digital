@@ -23,7 +23,7 @@
         android:paddingTop="@dimen/nav_header_vertical_spacing"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/my_icon_maior" />
+        app:srcCompat="@mipmap/nova_logo" />
 
     <TextView
         android:layout_width="match_parent"

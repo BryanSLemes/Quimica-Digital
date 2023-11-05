@@ -8,8 +8,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Button;
-import android.widget.Toast;
-
 import com.google.android.material.navigation.NavigationView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -42,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             con.inserir();
         }
         SharedPreferences prefs = getSharedPreferences("MY_APP_PREFS", Context.MODE_PRIVATE);
-        boolean updateShown = prefs.getBoolean("update_shown", false);
-        atualização(updateShown,prefs);
+        boolean update2_0 = prefs.getBoolean("update2_0", false);
+        atualização(update2_0,prefs);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -52,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_Ajuda, R.id.nav_informacao, R.id.logical_math, R.id.physycs_facilitating)
+                R.id.nav_home, R.id.nav_pesquisa_visual, R.id.nav_Ajuda, R.id.nav_informacao, R.id.logical_math, R.id.physycs_facilitating)
                 .setOpenableLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
@@ -61,18 +59,24 @@ public class MainActivity extends AppCompatActivity {
         main = (Activity) MainActivity.this;
     }
 
-    private void atualização(boolean updateShown,SharedPreferences prefs){
-        if (!updateShown) {
+    private void atualização(boolean JaViuAtt,SharedPreferences prefs){
+        if (!JaViuAtt) {
             // exiba a nota de atualização para o usuário
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage(getString(R.string.update_message) + "\n*App Logical Math acoplado ao Química Digital "+
-                            "\n*App Facilitating Physics acoplado ao Química Digital")
+            builder.setMessage(getString(R.string.update_message) +"\n* * * Bem vindo a Versão 2.0 do Química Digital * * *"+
+                            "\n-Novo design!!! Deixamos o app com uma aparência totalmente nova e moderna\n"+
+                            "\n-Adicionadas novas contas de matemática no app: PA e PG\n"+
+                            "\n-Elementos Recentes, localize facilmente os últimos elementos que você acessou\n"+
+                            "\n-Elemento aleatório: Tem que escolher um elemento, mas não tem a mínima ideia de qual escolher? Utilize a função de elemento aleatório!!!\n"+
+                            "\n-Temas Claro e Escuro, agora você pode utilizar o app com o tema do seu celular\n"+
+                            "\n-Mais funcionalidades, menos espaço consumido!!! Mesmo com o aumento de funcionalidades o app conseguiu ter uma queda significante no espaço consumido para instalação\n")
                     .setCancelable(false)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             // armazene um valor verdadeiro no armazenamento compartilhado para indicar que a nota de atualização já foi exibida
                             SharedPreferences.Editor editor = prefs.edit();
-                            editor.putBoolean("update_shown", true);
+                            //editor.putBoolean("update2_0", false);
+                            editor.putBoolean("update2_0", true);
                             editor.apply();
                         }
                     });
