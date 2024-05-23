@@ -21,6 +21,7 @@
         <entry key="..\:/Desenvolvimentos/Java/Android/quimicadigital4.0/app/src/main/res/layout/nav_header_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Desenvolvimentos/Java/Android/quimicadigital4.0/app/src/main/res/menu/activity_main_drawer.xml" value="0.36666666666666664" />
         <entry key="..\:/Desenvolvimentos/Java/Android/quimicadigital4.0/app/src/main/res/menu/main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Desenvolvimentos/Java/Android/quimicadigital4.0/app/src/main/res/mipmap-anydpi-v26/nova_logo.xml" value="0.3675" />
         <entry key="..\:/Desenvolvimentos/Java/quimicadigital4.0/app/src/main/res/drawable-anydpi/icone_arrow.xml" value="0.3675" />
         <entry key="..\:/Desenvolvimentos/Java/quimicadigital4.0/app/src/main/res/drawable-mdpi/forma_borda_radius_info.xml" value="0.3675" />
         <entry key="..\:/Desenvolvimentos/Java/quimicadigital4.0/app/src/main/res/drawable-mdpi/forma_borda_radius_recentes.xml" value="0.3675" />
@@ -254,7 +255,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
