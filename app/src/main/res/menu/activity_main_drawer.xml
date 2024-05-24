@@ -6,12 +6,12 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/icone_pesquisa"
+            android:icon="@drawable/icone_lupa"
             android:title="@string/pesquisa"
             android:background="@null"/>
         <item
             android:id="@+id/nav_pesquisa_visual"
-            android:icon="@drawable/icone_visual"
+            android:icon="@drawable/icone_busca_visual"
             android:title="@string/pesquisavisu" />
         <item
             android:id="@+id/nav_Ajuda"
@@ -25,8 +25,13 @@
             android:background="@null"/>
         <item
             android:id="@+id/logical_math"
-            android:icon="@drawable/icone_calculadora"
+            android:icon="@drawable/icone_funcao"
             android:title="@string/Math"
+            android:background="@null"/>
+        <item
+            android:id="@+id/quimica_organica"
+            android:icon="@drawable/icone_quimica_organica"
+            android:title="@string/quimica_organica"
             android:background="@null"/>
         <!--<item
             android:id="@+id/physycs_facilitating"

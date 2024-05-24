@@ -10,10 +10,31 @@
     <string name="pesquisavisu">Pesquisa Visual</string>
     <string name="ajuda">Ajuda</string>
     <string name="informativo">Informações</string>
-    <string name="Math">Logical Math</string>
-    <string name="physics">Facilitating Physics</string>
+    <string name="Math">Funções Matemáticas</string>
+    <string name="physics">Funções de Física</string>
+    <string name="quimica_organica">Química Orgânica</string>
     <string name="update_message">Notas versão 2.0:</string>
     <string name="versão">Versão 2.0</string>
+
+    <string name="credito_quimica_organica"><![CDATA[
+    <a href="https://www.flaticon.com/free-icons/search" title="search icons">Ícone Lupa de Pesquisa: Search icons created by Freepik - Flaticon</a>
+    <br>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/magnifying-glass" title="magnifying glass icons">Ícone Lupa da pesquisa Visual: Magnifying glass icons created by Freepik - Flaticon</a>
+    <br>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/question" title="question icons">Ícone de Ajuda: Question icons created by Freepik - Flaticon</a>
+    <br>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/information" title="information icons">Ícone de Informação: Information icons created by Freepik - Flaticon</a>
+    <br>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/function" title="function icons">Ícone de Função Matemática: Function icons created by Vitaly Gorbachev - Flaticon</a>
+    <br>
+    <br>
+    <a href="https://www.flaticon.com/free-icons/chemistry" title="chemistry icons">Ícone de Química Orgânica: Chemistry icons created by Freepik - Flaticon</a>
+]]></string>
+
 
 
     <string name="menu_home">Home</string>

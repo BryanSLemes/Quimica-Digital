@@ -3,13 +3,19 @@ package com.quimicadigital.qumicadigital40.ui;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+
+import androidx.core.text.HtmlCompat;
 import androidx.fragment.app.Fragment;
 import com.quimicadigital.qumicadigital40.R;
 import com.quimicadigital.qumicadigital40.databinding.FragmentInformacaoBinding;
+
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class Informacao extends Fragment {
 
@@ -46,6 +52,10 @@ public class Informacao extends Fragment {
 
             }
         }
+        TextView textView = binding.textView42;
+        textView.setText(HtmlCompat.fromHtml(getString(R.string.credito_quimica_organica), HtmlCompat.FROM_HTML_MODE_LEGACY));
+        textView.setMovementMethod(LinkMovementMethod.getInstance());
+
         View root = binding.getRoot();
         return root;
     }

@@ -182,7 +182,7 @@ tools:context=".ui.Informacao">
                 android:background="@null"
                 android:fontFamily="@font/raleway_bold"
                 android:gravity="center"
-                android:text="Compatibilidade:"
+                android:text="Público-Alvo:"
                 android:textSize="28sp"
                 android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo" />
 
@@ -197,7 +197,7 @@ tools:context=".ui.Informacao">
                 android:background="@null"
                 android:theme="@style/Theme.QuímicaDigital40.Informacao.texto"
                 android:fontFamily="@font/raleway_medium"
-                android:text="Infelizmente não existe uma versão para o IOS, já que a aplicação é feita somente para Android. Todo e qualquer smartphone com Android 7.0 ou superior pode utilizar o app."
+                android:text="O público-alvo do aplicativo são estudantes do ensino fundamental e/ou médio, já que as informações contidas no mesmo são de certa forma mais básicas em comparação com informações que profissionais da área da Química/Ciências necessitam."
                 android:textAlignment="center"
                 android:textSize="16sp" />
 
@@ -217,7 +217,7 @@ tools:context=".ui.Informacao">
             android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo.fora"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:text="Público-Alvo:"
+            android:text="Desenvolvimento do Design:"
             app:layout_constraintTop_toBottomOf="@+id/layout_info_3" />
 
         <TextView
@@ -227,7 +227,7 @@ tools:context=".ui.Informacao">
             android:layout_marginTop="5dp"
             android:background="@null"
             android:fontFamily="@font/raleway_medium"
-            android:text="O público-alvo do aplicativo são estudantes do ensino fundamental e/ou médio, já que as informações contidas no mesmo são de certa forma mais básicas em comparação com informações que profissionais da área da Química/Ciências necessitam."
+            android:text="O desenvolvimento do Design foi feito com auxílio da ferramenta de design colaborativa Figma, uma ferramenta gratuita para Android e IOS, pode ser obtida na Play Store ou Apple Store, como também pode ser utilizado através do seu site na Web."
             android:textAlignment="center"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="@+id/layout_info_3"
@@ -256,7 +256,7 @@ tools:context=".ui.Informacao">
                 android:gravity="center"
                 android:textSize="28sp"
                 android:theme="@style/Theme.QuímicaDigital40.Informacao.titulo"
-                android:text="Desenvolvimento do Design:"/>
+                android:text="Créditos de Ícones e Imagens:"/>
 
             <TextView
                 android:id="@+id/textView42"
@@ -271,7 +271,8 @@ tools:context=".ui.Informacao">
                 android:fontFamily="@font/raleway_medium"
                 android:textAlignment="center"
                 android:textSize="16sp"
-                android:text="O desenvolvimento do Design foi feito com auxílio da ferramenta de design colaborativa Figma, uma ferramenta gratuita para Android e IOS, pode ser obtida na Play Store ou Apple Store, como também pode ser utilizado através do seu site na Web." />
+                android:text="@string/credito_quimica_organica"
+                android:linksClickable="true"/>
 
         </LinearLayout>
 
