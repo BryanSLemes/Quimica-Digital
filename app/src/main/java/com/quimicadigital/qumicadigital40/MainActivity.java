@@ -8,6 +8,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.widget.Button;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.navigation.NavigationView;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -17,11 +20,12 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
+
+import com.google.android.play.core.review.ReviewException;
 import com.google.android.play.core.review.ReviewInfo;
 import com.google.android.play.core.review.ReviewManager;
 import com.google.android.play.core.review.ReviewManagerFactory;
-import com.google.android.play.core.tasks.OnCompleteListener;
-import com.google.android.play.core.tasks.Task;
+import com.google.android.play.core.review.model.ReviewErrorCode;
 import com.quimicadigital.qumicadigital40.Database.conexao;
 import com.quimicadigital.qumicadigital40.databinding.ActivityMainBinding;
 
@@ -32,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     public static Activity main;
 
+    private String preferencia = "update2_0_1";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
             con.inserir();
         }
         SharedPreferences prefs = getSharedPreferences("MY_APP_PREFS", Context.MODE_PRIVATE);
-        boolean update2_0 = prefs.getBoolean("update2_0", false);
+        boolean update2_0 = prefs.getBoolean(preferencia, false);
         atualização(update2_0,prefs);
 
         binding = ActivityMainBinding.inflate(getLayoutInflater());
@@ -63,20 +69,23 @@ public class MainActivity extends AppCompatActivity {
         if (!JaViuAtt) {
             // exiba a nota de atualização para o usuário
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage(getString(R.string.update_message) +"\n* * * Bem vindo a Versão 2.0 do Química Digital * * *"+
-                            "\n-Novo design!!! Deixamos o app com uma aparência totalmente nova e moderna\n"+
+            builder.setMessage(getString(R.string.update_message)+
+                            "\n-Nesta versão foram feitas algumas correções de bugs e informações."
+                            /*"" +
+                            "\n"+
                             "\n-Adicionadas novas contas de matemática no app: PA e PG\n"+
                             "\n-Elementos Recentes, localize facilmente os últimos elementos que você acessou\n"+
                             "\n-Elemento aleatório: Tem que escolher um elemento, mas não tem a mínima ideia de qual escolher? Utilize a função de elemento aleatório!!!\n"+
                             "\n-Temas Claro e Escuro, agora você pode utilizar o app com o tema do seu celular\n"+
-                            "\n-Mais funcionalidades, menos espaço consumido!!! Mesmo com o aumento de funcionalidades o app conseguiu ter uma queda significante no espaço consumido para instalação\n")
+                            "\n-Mais funcionalidades, menos espaço consumido!!! Mesmo com o aumento de funcionalidades o app conseguiu ter uma queda significante no espaço consumido para instalação\n"*/
+                    )
                     .setCancelable(false)
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {
                             // armazene um valor verdadeiro no armazenamento compartilhado para indicar que a nota de atualização já foi exibida
                             SharedPreferences.Editor editor = prefs.edit();
                             //editor.putBoolean("update2_0", false);
-                            editor.putBoolean("update2_0", true);
+                            editor.putBoolean(preferencia, true);
                             editor.apply();
                         }
                     });
@@ -96,23 +105,24 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public static void requestReview(Context context,Activity activity) {
+    public static void requestReview(Context context, Activity activity) {
         ReviewManager reviewManager = ReviewManagerFactory.create(context);
         Task<ReviewInfo> request = reviewManager.requestReviewFlow();
         request.addOnCompleteListener(new OnCompleteListener<ReviewInfo>() {
             @Override
             public void onComplete(@NonNull Task<ReviewInfo> task) {
                 if (task.isSuccessful()) {
-                    // A solicitação de avaliação foi bem-sucedida, mostrar o fluxo de avaliação
                     ReviewInfo reviewInfo = task.getResult();
                     Task<Void> flow = reviewManager.launchReviewFlow(activity, reviewInfo);
                     flow.addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            // O fluxo de avaliação foi concluído
-                            // Você pode adicionar lógica adicional aqui, se necessário
-                        }
+                        public void onComplete(@NonNull Task<Void> task) {}
                     });
+                } else {
+                    Exception exception = task.getException();
+                    if (exception instanceof ReviewException) {
+                        @ReviewErrorCode int reviewErrorCode = ((ReviewException) exception).getErrorCode();
+                    }
                 }
             }
         });

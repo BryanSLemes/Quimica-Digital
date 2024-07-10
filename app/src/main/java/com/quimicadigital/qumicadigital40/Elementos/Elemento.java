@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,12 +13,13 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.quimicadigital.qumicadigital40.R;
 import com.quimicadigital.qumicadigital40.ui.PesquisaPrincipal;
 
 import java.lang.reflect.Field;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Elemento extends AppCompatActivity {
 
@@ -57,6 +57,8 @@ public class Elemento extends AppCompatActivity {
 
     private int[] camadas;
 
+    private Map<String, Character> caracterExpoente = new HashMap<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,6 +75,18 @@ public class Elemento extends AppCompatActivity {
         camadas = crud.camadas;
         diagram = new Diagrama(crud.num_atomico);
         getSupportActionBar().setTitle(crud.nome);
+
+        //Preencher Map caracterExpoente
+        caracterExpoente.put("0", '⁰');
+        caracterExpoente.put("1", '¹');
+        caracterExpoente.put("2", '²');
+        caracterExpoente.put("3", '³');
+        caracterExpoente.put("4", '⁴');
+        caracterExpoente.put("5", '⁵');
+        caracterExpoente.put("6", '⁶');
+        caracterExpoente.put("7", '⁷');
+        caracterExpoente.put("8", '⁸');
+        caracterExpoente.put("9", '⁹');
 
         int mas;
         mas = (int) crud.massa;
@@ -128,7 +142,7 @@ public class Elemento extends AppCompatActivity {
         protons.setText(protons.getText().toString() + crud.num_atomico);
         eletrons.setText(eletrons.getText().toString() + crud.num_atomico);
         neutrons.setText(neutrons.getText().toString() + (mas - crud.num_atomico));
-        diagrama.setText(diagrama.getText().toString() + diagram.getDiagrama());
+        diagrama.setText(diagrama.getText().toString() + ajustarExpoentes(diagram.getDiagrama())); // Diagrama de pauling, aplicar método de conversão
         for(int i=0;i < crud.nox.size();i++){
             nox.setText(nox.getText().toString() + "\n" + crud.noxtxt.get(i) + "\n"+"     Protons: "+ (crud.num_atomico) + "\n"+"     Eletrons: "+ (crud.num_atomico - crud.nox.get(i)));
         }
@@ -190,5 +204,36 @@ public class Elemento extends AppCompatActivity {
         rightItem.setIcon(R.drawable.icone_arrow);
         rightItem.setVisible(true);
         return true;
+    }
+
+    public String ajustarExpoentes(String diagrama){
+        String caracterAnterior = "";
+        StringBuilder novoDiagrama = new StringBuilder();
+        for(char caracter: diagrama.toCharArray()){
+            if(igualSPDF(caracterAnterior) || contidosEmMap(caracterExpoente,Character.toString(caracter),caracterAnterior)){
+                novoDiagrama.append(caracterExpoente.get(Character.toString(caracter)));
+            } else{
+                novoDiagrama.append(caracter);
+            }
+
+            caracterAnterior = Character.toString(caracter);
+        }
+        return novoDiagrama.toString();
+    }
+
+    private boolean igualSPDF(String caracter){
+        if(caracter.equals("s") || caracter.equals("p") || caracter.equals("d") || caracter.equals("f")){
+            return true;
+        }
+
+        return false;
+    }
+
+    private boolean contidosEmMap(Map<String, Character> map, String caracter1, String caracter2){
+        if(map.containsKey(caracter1) && map.containsKey(caracter2)){
+            return true;
+        }
+
+        return false;
     }
 }

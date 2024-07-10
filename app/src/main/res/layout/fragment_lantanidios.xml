@@ -28,7 +28,7 @@
             android:layout_marginTop="40dp"
             android:background="@null"
             android:fontFamily="@font/roboto_bold"
-            android:text="Metais de Transição Interna - Lantanídios"
+            android:text="Metais de Transição Interna - Lantanídeos"
             android:textAlignment="center"
             android:textSize="20sp"
             android:theme="@style/Theme.QuímicaDigital40.txt_diagrama"

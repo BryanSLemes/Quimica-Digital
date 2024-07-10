@@ -28,11 +28,11 @@
             android:icon="@drawable/icone_funcao"
             android:title="@string/Math"
             android:background="@null"/>
-        <item
+        <!--<item
             android:id="@+id/quimica_organica"
             android:icon="@drawable/icone_quimica_organica"
             android:title="@string/quimica_organica"
-            android:background="@null"/>
+            android:background="@null"/>-->
         <!--<item
             android:id="@+id/physycs_facilitating"
             android:icon="@drawable/icone_atomo"
